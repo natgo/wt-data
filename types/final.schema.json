@@ -1,0 +1,1082 @@
+{
+  "$ref": "#/definitions/final",
+  "definitions": {
+    "final": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "ground": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": { "type": "string" },
+              "wikiname": { "type": "string" },
+              "displayname": { "type": "string" },
+              "country": { "type": "string" },
+              "operator_country": { "type": "string" },
+              "rank": { "type": "number", "maximum": 8, "minimum": 1 },
+              "crew": { "type": "number" },
+              "sl_price": { "type": "number" },
+              "reqRP": { "type": "number" },
+              "br": { "type": "array", "items": { "type": "string" } },
+              "realbr": { "type": "array", "items": { "type": "number" } },
+              "base_repair": { "type": "array", "items": { "type": "number" } },
+              "rp_multiplyer": { "type": "number" },
+              "sl_multiplyer": {
+                "type": "array",
+                "items": { "type": "number" }
+              },
+              "prem_type": {
+                "type": "string",
+                "enum": [
+                  "false",
+                  "event",
+                  "marketplace",
+                  "store",
+                  "gold",
+                  "squad"
+                ]
+              },
+              "event": { "type": "string" },
+              "cost_gold": { "type": "number" },
+              "hidden": { "type": "boolean" },
+              "marketplace": { "type": "string" },
+              "store": { "type": "string" },
+              "type": { "type": "string", "const": "ground" },
+              "mass": { "type": "number" },
+              "horsepower": { "type": "number" },
+              "gears_forward": { "type": "number" },
+              "gears_backward": { "type": "number" },
+              "hydro_suspension": { "type": "boolean" },
+              "can_float": { "type": "boolean" },
+              "has_synchro": { "type": "boolean" },
+              "has_neutral": { "type": "boolean" },
+              "has_dozer": { "type": "boolean" },
+              "has_ess": { "type": "boolean" },
+              "has_smoke": { "type": "boolean" },
+              "has_lws": { "type": "boolean" },
+              "has_era": { "type": "boolean" },
+              "has_composite": { "type": "boolean" },
+              "has_laser_range": { "type": "boolean" },
+              "has_range": { "type": "boolean" },
+              "optics": {
+                "type": "object",
+                "properties": {
+                  "driver": {
+                    "type": "object",
+                    "properties": {
+                      "ir": {
+                        "type": "object",
+                        "properties": {
+                          "resolution": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": [
+                              { "type": "number", "enum": [800, 1200, 1600] },
+                              { "type": "number", "enum": [600, 800, 1200] }
+                            ]
+                          },
+                          "lightMult": {
+                            "type": "number",
+                            "enum": [5, 7, 8, 9]
+                          },
+                          "ghosting": {
+                            "type": "number",
+                            "enum": [0.7, 0.75, 0.6]
+                          },
+                          "noiseFactor": { "type": "number", "const": 0.2 }
+                        },
+                        "required": [
+                          "resolution",
+                          "lightMult",
+                          "ghosting",
+                          "noiseFactor"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "thermal": {
+                        "type": "object",
+                        "properties": {
+                          "resolution": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": [
+                              { "type": "number", "enum": [500, 800, 1200] },
+                              { "type": "number", "enum": [300, 600, 800] }
+                            ]
+                          },
+                          "noiseFactor": {
+                            "type": "number",
+                            "enum": [0.05, 0.04]
+                          }
+                        },
+                        "required": ["resolution", "noiseFactor"],
+                        "additionalProperties": false
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "gunner": {
+                    "type": "object",
+                    "properties": {
+                      "ir": {
+                        "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/driver/properties/ir"
+                      },
+                      "thermal": {
+                        "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/driver/properties/thermal"
+                      },
+                      "zoomInFov": { "type": "number" },
+                      "zoomOutFov": { "type": "number" }
+                    },
+                    "required": ["zoomInFov", "zoomOutFov"],
+                    "additionalProperties": false
+                  },
+                  "commander": {
+                    "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/gunner"
+                  }
+                },
+                "required": ["gunner"],
+                "additionalProperties": false
+              },
+              "weapons": {
+                "type": "object",
+                "properties": {
+                  "cannon": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "intname": { "type": "string" },
+                            "displayname": { "type": "string" },
+                            "ammo": { "type": "number" },
+                            "shells": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "modname": { "type": "string" },
+                                  "intname": { "type": "string" },
+                                  "type": { "type": "string" },
+                                  "name": { "type": "string" },
+                                  "maxamount": { "type": "number" },
+                                  "modmaxamount": { "type": "number" }
+                                },
+                                "required": ["modname", "type"],
+                                "additionalProperties": false
+                              }
+                            },
+                            "belts": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "modname": { "type": "string" },
+                                  "name": { "type": "string" },
+                                  "maxamount": { "type": "number" },
+                                  "modmaxamount": { "type": "number" },
+                                  "shells": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "intname": { "type": "string" },
+                                        "type": { "type": "string" },
+                                        "name": { "type": "string" }
+                                      },
+                                      "required": ["intname", "type"],
+                                      "additionalProperties": false
+                                    }
+                                  }
+                                },
+                                "required": ["modname", "name", "shells"],
+                                "additionalProperties": false
+                              }
+                            },
+                            "shotFreq": { "type": "number" },
+                            "caliber": { "type": "number" },
+                            "horizonalSpeed": {
+                              "anyOf": [
+                                { "type": "number" },
+                                { "type": "string", "const": "primary" }
+                              ]
+                            },
+                            "verticalSpeed": {
+                              "anyOf": [
+                                { "type": "number" },
+                                { "type": "string", "const": "primary" }
+                              ]
+                            },
+                            "horizonalLimit": {
+                              "anyOf": [
+                                {
+                                  "type": "array",
+                                  "items": { "type": "number" }
+                                },
+                                { "type": "string", "const": "primary" }
+                              ]
+                            },
+                            "verticalLimit": {
+                              "anyOf": [
+                                {
+                                  "type": "array",
+                                  "items": { "type": "number" }
+                                },
+                                { "type": "string", "const": "primary" }
+                              ]
+                            },
+                            "secondary": { "type": "boolean" },
+                            "autoloader": { "type": "boolean" },
+                            "stabilizer": {
+                              "type": "object",
+                              "properties": {
+                                "shoulderStop": { "type": "boolean" },
+                                "horizontal": { "type": "boolean" },
+                                "vertical": { "type": "boolean" },
+                                "horizontalSpeed": { "type": "number" },
+                                "verticalSpeed": { "type": "number" }
+                              },
+                              "additionalProperties": false
+                            },
+                            "hullAiming": {
+                              "type": "object",
+                              "properties": {
+                                "horizontal": { "type": "boolean" },
+                                "vertical": { "type": "boolean" },
+                                "maxRoll": { "type": "number" }
+                              },
+                              "required": ["maxRoll"],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "intname",
+                            "displayname",
+                            "ammo",
+                            "shotFreq",
+                            "caliber",
+                            "horizonalSpeed",
+                            "verticalSpeed",
+                            "horizonalLimit",
+                            "verticalLimit"
+                          ],
+                          "additionalProperties": false
+                        },
+                        { "not": {} }
+                      ]
+                    }
+                  },
+                  "machineGun": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "intname": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/intname"
+                            },
+                            "displayname": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/displayname"
+                            },
+                            "ammo": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/ammo"
+                            },
+                            "shells": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/shells"
+                            },
+                            "belts": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/belts"
+                            },
+                            "shotFreq": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/shotFreq"
+                            },
+                            "caliber": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/caliber"
+                            },
+                            "horizonalSpeed": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/horizonalSpeed"
+                            },
+                            "verticalSpeed": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/verticalSpeed"
+                            },
+                            "horizonalLimit": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/horizonalLimit"
+                            },
+                            "verticalLimit": {
+                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/verticalLimit"
+                            }
+                          },
+                          "required": [
+                            "intname",
+                            "displayname",
+                            "ammo",
+                            "shotFreq",
+                            "caliber",
+                            "horizonalSpeed",
+                            "verticalSpeed",
+                            "horizonalLimit",
+                            "verticalLimit"
+                          ],
+                          "additionalProperties": false
+                        },
+                        { "not": {} }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties": false
+              },
+              "normal_type": {
+                "type": "string",
+                "enum": [
+                  "type_light_tank",
+                  "type_medium_tank",
+                  "type_heavy_tank",
+                  "type_tank_destroyer",
+                  "type_spaa"
+                ]
+              },
+              "extended_type": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["type_missile_tank"] }
+              }
+            },
+            "required": [
+              "intname",
+              "country",
+              "rank",
+              "crew",
+              "sl_price",
+              "br",
+              "realbr",
+              "base_repair",
+              "rp_multiplyer",
+              "sl_multiplyer",
+              "prem_type",
+              "type",
+              "optics",
+              "normal_type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "aircraft": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+              },
+              "wikiname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+              },
+              "displayname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+              },
+              "country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+              },
+              "operator_country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+              },
+              "rank": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+              },
+              "crew": { "type": "number" },
+              "sl_price": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+              },
+              "reqRP": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+              },
+              "br": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+              },
+              "realbr": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+              },
+              "base_repair": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+              },
+              "rp_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+              },
+              "sl_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+              },
+              "prem_type": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+              },
+              "event": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+              },
+              "cost_gold": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+              },
+              "hidden": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+              },
+              "marketplace": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+              },
+              "store": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+              },
+              "type": { "type": "string", "const": "aircraft" },
+              "ballistic_computer": {
+                "type": "object",
+                "properties": {
+                  "ccip_guns": { "type": "boolean", "const": true },
+                  "ccip_rockets": { "type": "boolean", "const": true },
+                  "ccip_bombs": { "type": "boolean", "const": true },
+                  "ccrp_bombs": { "type": "boolean", "const": true }
+                },
+                "additionalProperties": false
+              },
+              "secondary_weapon_preset": {
+                "type": "object",
+                "properties": {
+                  "maxload": { "type": "number" },
+                  "maxloadLeft": { "type": "number" },
+                  "maxloadRight": { "type": "number" },
+                  "maxDisbalance": { "type": "number" },
+                  "weaponSlots": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "hidden": { "type": "boolean" },
+                            "slot": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "intname": { "type": "string" },
+                                      "reqModification": {
+                                        "anyOf": [
+                                          { "type": "string" },
+                                          {
+                                            "type": "array",
+                                            "items": { "type": "string" }
+                                          }
+                                        ]
+                                      },
+                                      "weapons": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "type": {
+                                              "anyOf": [
+                                                {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "aam",
+                                                    "agm",
+                                                    "bomb",
+                                                    "guided_bomb",
+                                                    "torpedo",
+                                                    "rocket",
+                                                    "gun",
+                                                    "countermeasures",
+                                                    "fuel_tank",
+                                                    "optics",
+                                                    "targeting_pod",
+                                                    "booster"
+                                                  ]
+                                                },
+                                                { "type": "null" }
+                                              ]
+                                            },
+                                            "displayname": { "type": "string" },
+                                            "bullets": { "type": "number" }
+                                          },
+                                          "required": ["type"],
+                                          "additionalProperties": false
+                                        }
+                                      }
+                                    },
+                                    "required": ["intname", "weapons"],
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "type": {
+                                        "anyOf": [
+                                          {
+                                            "type": "string",
+                                            "enum": [
+                                              "aam",
+                                              "agm",
+                                              "bomb",
+                                              "guided_bomb",
+                                              "torpedo",
+                                              "rocket",
+                                              "gun",
+                                              "countermeasures",
+                                              "fuel_tank",
+                                              "optics",
+                                              "targeting_pod",
+                                              "booster"
+                                            ]
+                                          },
+                                          { "type": "null" }
+                                        ]
+                                      },
+                                      "bullets": { "type": "number" },
+                                      "intname": { "type": "string" },
+                                      "displayname": { "type": "string" },
+                                      "reqModification": {
+                                        "anyOf": [
+                                          { "type": "string" },
+                                          {
+                                            "type": "array",
+                                            "items": { "type": "string" }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "required": ["type", "intname"],
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "name": { "type": "string" }
+                                    },
+                                    "required": ["name"],
+                                    "additionalProperties": false
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": ["hidden", "slot"],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "slot": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "intname": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/intname"
+                                      },
+                                      "reqModification": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/reqModification"
+                                      },
+                                      "weapons": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/weapons"
+                                      },
+                                      "iconType": { "type": "string" }
+                                    },
+                                    "required": [
+                                      "intname",
+                                      "weapons",
+                                      "iconType"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "type": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/type"
+                                      },
+                                      "bullets": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/bullets"
+                                      },
+                                      "intname": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/intname"
+                                      },
+                                      "displayname": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/displayname"
+                                      },
+                                      "reqModification": {
+                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/reqModification"
+                                      },
+                                      "iconType": { "type": "string" }
+                                    },
+                                    "required": ["type", "intname", "iconType"],
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "name": { "type": "string" }
+                                    },
+                                    "required": ["name"],
+                                    "additionalProperties": false
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": ["slot"],
+                          "additionalProperties": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "maxload",
+                  "maxloadLeft",
+                  "maxloadRight",
+                  "maxDisbalance",
+                  "weaponSlots"
+                ],
+                "additionalProperties": false
+              },
+              "normal_type": {
+                "type": "string",
+                "enum": [
+                  "type_fighter",
+                  "type_bomber",
+                  "type_assault",
+                  "type_strike_ucav"
+                ]
+              },
+              "extended_type": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "type_jet_fighter",
+                    "type_jet_bomber",
+                    "type_longrange_bomber",
+                    "type_frontline_bomber",
+                    "type_hydroplane",
+                    "type_naval_aircraft",
+                    "type_torpedo_bomber",
+                    "type_dive_bomber",
+                    "type_interceptor",
+                    "type_aa_fighter",
+                    "type_light_bomber"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "intname",
+              "country",
+              "rank",
+              "sl_price",
+              "br",
+              "realbr",
+              "base_repair",
+              "rp_multiplyer",
+              "sl_multiplyer",
+              "prem_type",
+              "type",
+              "normal_type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "helicopter": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+              },
+              "wikiname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+              },
+              "displayname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+              },
+              "country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+              },
+              "operator_country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+              },
+              "rank": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+              },
+              "crew": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+              },
+              "sl_price": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+              },
+              "reqRP": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+              },
+              "br": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+              },
+              "realbr": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+              },
+              "base_repair": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+              },
+              "rp_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+              },
+              "sl_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+              },
+              "prem_type": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+              },
+              "event": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+              },
+              "cost_gold": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+              },
+              "hidden": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+              },
+              "marketplace": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+              },
+              "store": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+              },
+              "type": { "type": "string", "const": "helicopter" },
+              "ballistic_computer": {
+                "$ref": "#/definitions/final/properties/aircraft/items/properties/ballistic_computer"
+              },
+              "secondary_weapon_preset": {
+                "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset"
+              },
+              "has_maw": { "type": "boolean" },
+              "has_lws": { "type": "boolean" },
+              "has_rwr": { "type": "boolean" },
+              "has_ircm": { "type": "boolean" },
+              "has_hirss": { "type": "boolean" },
+              "optics": {
+                "type": "object",
+                "properties": {
+                  "pilot": {
+                    "type": "object",
+                    "properties": {
+                      "ir": {
+                        "type": "object",
+                        "properties": {
+                          "resolution": {
+                            "type": "array",
+                            "items": { "type": "number" }
+                          },
+                          "lightMult": { "type": "number" },
+                          "ghosting": { "type": "number" },
+                          "noiseFactor": { "type": "number" }
+                        },
+                        "required": [
+                          "resolution",
+                          "lightMult",
+                          "ghosting",
+                          "noiseFactor"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "gunner": {
+                    "$ref": "#/definitions/final/properties/helicopter/items/properties/optics/properties/pilot"
+                  },
+                  "sight": {
+                    "type": "object",
+                    "properties": {
+                      "ir": {
+                        "$ref": "#/definitions/final/properties/helicopter/items/properties/optics/properties/pilot/properties/ir"
+                      },
+                      "zoomInFov": { "type": "number" },
+                      "zoomOutFov": { "type": "number" },
+                      "thermal": {
+                        "type": "object",
+                        "properties": {
+                          "resolution": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": [
+                              { "type": "number", "const": 1024 },
+                              { "type": "number", "const": 768 }
+                            ]
+                          },
+                          "noiseFactor": {
+                            "type": "number",
+                            "enum": [0.5, 0.05]
+                          }
+                        },
+                        "required": ["resolution", "noiseFactor"],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": ["zoomInFov", "zoomOutFov"],
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false
+              },
+              "normal_type": {
+                "type": "string",
+                "enum": ["type_attack_helicopter", "type_utility_helicopter"]
+              },
+              "extended_type": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["type_utility_helicopter"]
+                }
+              }
+            },
+            "required": [
+              "intname",
+              "country",
+              "rank",
+              "crew",
+              "sl_price",
+              "br",
+              "realbr",
+              "base_repair",
+              "rp_multiplyer",
+              "sl_multiplyer",
+              "prem_type",
+              "type",
+              "normal_type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "ship": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+              },
+              "wikiname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+              },
+              "displayname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+              },
+              "country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+              },
+              "operator_country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+              },
+              "rank": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+              },
+              "crew": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+              },
+              "sl_price": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+              },
+              "reqRP": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+              },
+              "br": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+              },
+              "realbr": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+              },
+              "base_repair": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+              },
+              "rp_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+              },
+              "sl_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+              },
+              "prem_type": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+              },
+              "event": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+              },
+              "cost_gold": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+              },
+              "hidden": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+              },
+              "marketplace": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+              },
+              "store": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+              },
+              "type": { "type": "string", "const": "ship" },
+              "normal_type": {
+                "type": "string",
+                "enum": [
+                  "type_battlecruiser",
+                  "type_battleship",
+                  "type_frigate",
+                  "type_light_cruiser",
+                  "type_heavy_cruiser",
+                  "type_destroyer"
+                ]
+              }
+            },
+            "required": [
+              "intname",
+              "country",
+              "rank",
+              "crew",
+              "sl_price",
+              "br",
+              "realbr",
+              "base_repair",
+              "rp_multiplyer",
+              "sl_multiplyer",
+              "prem_type",
+              "type",
+              "normal_type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "boat": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+              },
+              "wikiname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+              },
+              "displayname": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+              },
+              "country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+              },
+              "operator_country": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+              },
+              "rank": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+              },
+              "crew": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+              },
+              "sl_price": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+              },
+              "reqRP": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+              },
+              "br": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+              },
+              "realbr": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+              },
+              "base_repair": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+              },
+              "rp_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+              },
+              "sl_multiplyer": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+              },
+              "prem_type": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+              },
+              "event": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+              },
+              "cost_gold": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+              },
+              "hidden": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+              },
+              "marketplace": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+              },
+              "store": {
+                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+              },
+              "type": { "type": "string", "const": "boat" },
+              "normal_type": {
+                "type": "string",
+                "enum": ["type_barge", "type_boat", "type_frigate"]
+              },
+              "extended_type": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "type_heavy_boat",
+                    "type_armored_boat",
+                    "type_torpedo_boat",
+                    "type_gun_boat",
+                    "type_naval_ferry_barge",
+                    "type_naval_aa_ferry",
+                    "type_torpedo_gun_boat",
+                    "type_minelayer",
+                    "type_submarine_chaser",
+                    "type_frigate"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "intname",
+              "country",
+              "rank",
+              "crew",
+              "sl_price",
+              "br",
+              "realbr",
+              "base_repair",
+              "rp_multiplyer",
+              "sl_multiplyer",
+              "prem_type",
+              "type",
+              "normal_type"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "version",
+        "ground",
+        "aircraft",
+        "helicopter",
+        "ship",
+        "boat"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

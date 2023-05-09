@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "npm.packageManager": "pnpm",
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "double",
+    "files.insertFinalNewline": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+
+    "json.schemas": [
+    {
+        "fileMatch": [
+            "/data/final*.json"
+        ],
+        "url": "./types/final.schema.json"
+    },
+    {
+        "fileMatch": [
+            "/data/modifications*.json"
+        ],
+        "url": "./types/modifications.schema.json"
+    },
+    {
+        "fileMatch": [
+            "/data/shop*.json"
+        ],
+        "url": "./types/shop.schema.json"
+    }
+]
+  }
+}

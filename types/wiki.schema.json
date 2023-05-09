@@ -1,0 +1,45 @@
+{
+  "$ref": "#/definitions/wiki",
+  "definitions": {
+    "wiki": {
+      "type": "object",
+      "properties": {
+        "ground": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intname": { "type": "string" },
+              "ab_top_speed": {
+                "type": "array",
+                "items": { "type": "number" }
+              },
+              "rb_top_speed": {
+                "$ref": "#/definitions/wiki/properties/ground/items/properties/ab_top_speed"
+              },
+              "visibility": { "type": "number", "maximum": 3000 }
+            },
+            "required": [
+              "intname",
+              "ab_top_speed",
+              "rb_top_speed",
+              "visibility"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "aircraft": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/wiki/properties/ground/items" }
+        },
+        "helicopter": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/wiki/properties/ground/items" }
+        }
+      },
+      "required": ["ground", "aircraft", "helicopter"],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

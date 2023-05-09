@@ -1,0 +1,195 @@
+{
+  "$ref": "#/definitions/modifications",
+  "definitions": {
+    "modifications": {
+      "type": "object",
+      "properties": {
+        "ground": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "intname": { "type": "string" },
+                  "mods": {
+                    "type": "object",
+                    "properties": {
+                      "lth": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "intname": { "type": "string" },
+                              "displayname": { "type": "string" },
+                              "reqMod": { "type": "string" },
+                              "image": { "type": "string" }
+                            },
+                            "required": ["intname", "image"],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "armor": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "weapon": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "mobility": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "protection": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "firepower": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "primaryWeapon": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "secondaryWeapon": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "premiumMods": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "expendable": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "seakeeping": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      },
+                      "unsinkability": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0/properties/mods/properties/lth/items/items"
+                          }
+                        }
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "required": ["intname", "mods"],
+                "additionalProperties": false
+              },
+              { "not": {} }
+            ]
+          }
+        },
+        "aircraft": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0"
+              },
+              { "not": {} }
+            ]
+          }
+        },
+        "helicopter": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0"
+              },
+              { "not": {} }
+            ]
+          }
+        },
+        "ship": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0"
+              },
+              { "not": {} }
+            ]
+          }
+        },
+        "boat": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/modifications/properties/ground/items/anyOf/0"
+              },
+              { "not": {} }
+            ]
+          }
+        }
+      },
+      "required": ["ground", "aircraft", "helicopter", "ship", "boat"],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
