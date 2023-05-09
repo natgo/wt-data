@@ -204,6 +204,7 @@ export const sightSchema = z.object({
     })
     .optional(),
 });
+export type Sight = z.infer<typeof sightSchema>;
 
 export const gunnerSightSchema = sightSchema.extend({
   zoomInFov: z.number(),
@@ -346,8 +347,8 @@ export const tankCannonSchema = genericGunSchema.extend({
 export type TankCannon = z.infer<typeof tankCannonSchema>;
 
 export const tankWeaponsSchema = z.object({
-  cannon: z.array(z.union([tankCannonSchema, z.undefined()])).optional(),
-  machineGun: z.array(z.union([genericGunSchema, z.undefined()])).optional(),
+  cannon: z.array(tankCannonSchema).optional(),
+  machineGun: z.array(genericGunSchema).optional(),
 });
 export type TankWeapons = z.infer<typeof tankWeaponsSchema>;
 

@@ -49,10 +49,10 @@ export const vehicleModsSchema = z.object({
 export type VehicleMods = z.infer<typeof vehicleModsSchema>;
 
 export const modificationsSchema = z.object({
-  ground: z.array(z.union([vehicleModsSchema, z.undefined()])),
-  aircraft: z.array(z.union([vehicleModsSchema, z.undefined()])),
-  helicopter: z.array(z.union([vehicleModsSchema, z.undefined()])),
-  ship: z.array(z.union([vehicleModsSchema, z.undefined()])),
-  boat: z.array(z.union([vehicleModsSchema, z.undefined()])),
+  ground: z.array(vehicleModsSchema),
+  aircraft: z.array(vehicleModsSchema),
+  helicopter: z.array(vehicleModsSchema),
+  ship: z.array(vehicleModsSchema),
+  boat: z.array(vehicleModsSchema),
 });
 export type Modifications = z.infer<typeof modificationsSchema>;
