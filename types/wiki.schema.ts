@@ -13,9 +13,11 @@ export const wikiSigleSchema = z.object({
   rb_top_speed: topSpeed,
   visibility: visibility,
 });
+export type WikiSigle = z.infer<typeof wikiSigleSchema>;
 
 export const wikiSchema = z.object({
   ground: z.array(wikiSigleSchema),
   aircraft: z.array(wikiSigleSchema),
   helicopter: z.array(wikiSigleSchema),
 });
+export type Wiki = z.infer<typeof wikiSchema>;
