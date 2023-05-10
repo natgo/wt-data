@@ -147,185 +147,169 @@
                   "cannon": {
                     "type": "array",
                     "items": {
-                      "anyOf": [
-                        {
+                      "type": "object",
+                      "properties": {
+                        "intname": { "type": "string" },
+                        "displayname": { "type": "string" },
+                        "ammo": { "type": "number" },
+                        "shells": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "modname": { "type": "string" },
+                              "intname": { "type": "string" },
+                              "type": { "type": "string" },
+                              "name": { "type": "string" },
+                              "maxamount": { "type": "number" },
+                              "modmaxamount": { "type": "number" }
+                            },
+                            "required": ["modname", "type"],
+                            "additionalProperties": false
+                          }
+                        },
+                        "belts": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "modname": { "type": "string" },
+                              "name": { "type": "string" },
+                              "maxamount": { "type": "number" },
+                              "modmaxamount": { "type": "number" },
+                              "shells": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "intname": { "type": "string" },
+                                    "type": { "type": "string" },
+                                    "name": { "type": "string" }
+                                  },
+                                  "required": ["intname", "type"],
+                                  "additionalProperties": false
+                                }
+                              }
+                            },
+                            "required": ["modname", "name", "shells"],
+                            "additionalProperties": false
+                          }
+                        },
+                        "shotFreq": { "type": "number" },
+                        "caliber": { "type": "number" },
+                        "horizonalSpeed": {
+                          "anyOf": [
+                            { "type": "number" },
+                            { "type": "string", "const": "primary" }
+                          ]
+                        },
+                        "verticalSpeed": {
+                          "anyOf": [
+                            { "type": "number" },
+                            { "type": "string", "const": "primary" }
+                          ]
+                        },
+                        "horizonalLimit": {
+                          "anyOf": [
+                            { "type": "array", "items": { "type": "number" } },
+                            { "type": "string", "const": "primary" }
+                          ]
+                        },
+                        "verticalLimit": {
+                          "anyOf": [
+                            { "type": "array", "items": { "type": "number" } },
+                            { "type": "string", "const": "primary" }
+                          ]
+                        },
+                        "secondary": { "type": "boolean" },
+                        "autoloader": { "type": "boolean" },
+                        "stabilizer": {
                           "type": "object",
                           "properties": {
-                            "intname": { "type": "string" },
-                            "displayname": { "type": "string" },
-                            "ammo": { "type": "number" },
-                            "shells": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "modname": { "type": "string" },
-                                  "intname": { "type": "string" },
-                                  "type": { "type": "string" },
-                                  "name": { "type": "string" },
-                                  "maxamount": { "type": "number" },
-                                  "modmaxamount": { "type": "number" }
-                                },
-                                "required": ["modname", "type"],
-                                "additionalProperties": false
-                              }
-                            },
-                            "belts": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "modname": { "type": "string" },
-                                  "name": { "type": "string" },
-                                  "maxamount": { "type": "number" },
-                                  "modmaxamount": { "type": "number" },
-                                  "shells": {
-                                    "type": "array",
-                                    "items": {
-                                      "type": "object",
-                                      "properties": {
-                                        "intname": { "type": "string" },
-                                        "type": { "type": "string" },
-                                        "name": { "type": "string" }
-                                      },
-                                      "required": ["intname", "type"],
-                                      "additionalProperties": false
-                                    }
-                                  }
-                                },
-                                "required": ["modname", "name", "shells"],
-                                "additionalProperties": false
-                              }
-                            },
-                            "shotFreq": { "type": "number" },
-                            "caliber": { "type": "number" },
-                            "horizonalSpeed": {
-                              "anyOf": [
-                                { "type": "number" },
-                                { "type": "string", "const": "primary" }
-                              ]
-                            },
-                            "verticalSpeed": {
-                              "anyOf": [
-                                { "type": "number" },
-                                { "type": "string", "const": "primary" }
-                              ]
-                            },
-                            "horizonalLimit": {
-                              "anyOf": [
-                                {
-                                  "type": "array",
-                                  "items": { "type": "number" }
-                                },
-                                { "type": "string", "const": "primary" }
-                              ]
-                            },
-                            "verticalLimit": {
-                              "anyOf": [
-                                {
-                                  "type": "array",
-                                  "items": { "type": "number" }
-                                },
-                                { "type": "string", "const": "primary" }
-                              ]
-                            },
-                            "secondary": { "type": "boolean" },
-                            "autoloader": { "type": "boolean" },
-                            "stabilizer": {
-                              "type": "object",
-                              "properties": {
-                                "shoulderStop": { "type": "boolean" },
-                                "horizontal": { "type": "boolean" },
-                                "vertical": { "type": "boolean" },
-                                "horizontalSpeed": { "type": "number" },
-                                "verticalSpeed": { "type": "number" }
-                              },
-                              "additionalProperties": false
-                            },
-                            "hullAiming": {
-                              "type": "object",
-                              "properties": {
-                                "horizontal": { "type": "boolean" },
-                                "vertical": { "type": "boolean" },
-                                "maxRoll": { "type": "number" }
-                              },
-                              "required": ["maxRoll"],
-                              "additionalProperties": false
-                            }
+                            "shoulderStop": { "type": "boolean" },
+                            "horizontal": { "type": "boolean" },
+                            "vertical": { "type": "boolean" },
+                            "horizontalSpeed": { "type": "number" },
+                            "verticalSpeed": { "type": "number" }
                           },
-                          "required": [
-                            "intname",
-                            "displayname",
-                            "ammo",
-                            "shotFreq",
-                            "caliber",
-                            "horizonalSpeed",
-                            "verticalSpeed",
-                            "horizonalLimit",
-                            "verticalLimit"
-                          ],
                           "additionalProperties": false
                         },
-                        { "not": {} }
-                      ]
+                        "hullAiming": {
+                          "type": "object",
+                          "properties": {
+                            "horizontal": { "type": "boolean" },
+                            "vertical": { "type": "boolean" },
+                            "maxRoll": { "type": "number" }
+                          },
+                          "required": ["maxRoll"],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "intname",
+                        "displayname",
+                        "ammo",
+                        "shotFreq",
+                        "caliber",
+                        "horizonalSpeed",
+                        "verticalSpeed",
+                        "horizonalLimit",
+                        "verticalLimit"
+                      ],
+                      "additionalProperties": false
                     }
                   },
                   "machineGun": {
                     "type": "array",
                     "items": {
-                      "anyOf": [
-                        {
-                          "type": "object",
-                          "properties": {
-                            "intname": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/intname"
-                            },
-                            "displayname": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/displayname"
-                            },
-                            "ammo": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/ammo"
-                            },
-                            "shells": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/shells"
-                            },
-                            "belts": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/belts"
-                            },
-                            "shotFreq": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/shotFreq"
-                            },
-                            "caliber": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/caliber"
-                            },
-                            "horizonalSpeed": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/horizonalSpeed"
-                            },
-                            "verticalSpeed": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/verticalSpeed"
-                            },
-                            "horizonalLimit": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/horizonalLimit"
-                            },
-                            "verticalLimit": {
-                              "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/anyOf/0/properties/verticalLimit"
-                            }
-                          },
-                          "required": [
-                            "intname",
-                            "displayname",
-                            "ammo",
-                            "shotFreq",
-                            "caliber",
-                            "horizonalSpeed",
-                            "verticalSpeed",
-                            "horizonalLimit",
-                            "verticalLimit"
-                          ],
-                          "additionalProperties": false
+                      "type": "object",
+                      "properties": {
+                        "intname": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/intname"
                         },
-                        { "not": {} }
-                      ]
+                        "displayname": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/displayname"
+                        },
+                        "ammo": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/ammo"
+                        },
+                        "shells": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/shells"
+                        },
+                        "belts": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/belts"
+                        },
+                        "shotFreq": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/shotFreq"
+                        },
+                        "caliber": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/caliber"
+                        },
+                        "horizonalSpeed": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/horizonalSpeed"
+                        },
+                        "verticalSpeed": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/verticalSpeed"
+                        },
+                        "horizonalLimit": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/horizonalLimit"
+                        },
+                        "verticalLimit": {
+                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/verticalLimit"
+                        }
+                      },
+                      "required": [
+                        "intname",
+                        "displayname",
+                        "ammo",
+                        "shotFreq",
+                        "caliber",
+                        "horizonalSpeed",
+                        "verticalSpeed",
+                        "horizonalLimit",
+                        "verticalLimit"
+                      ],
+                      "additionalProperties": false
                     }
                   }
                 },
