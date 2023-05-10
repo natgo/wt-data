@@ -370,6 +370,8 @@ export const groundPropsSchema = finalPropsSchema
     horsepower: z.number().optional(),
     gears_forward: z.number().optional(),
     gears_backward: z.number().optional(),
+    maxSpeedRB: z.array(z.number()).length(2).optional(),
+    maxSpeedAB: z.array(z.number()).length(2).optional(),
     hydro_suspension: z.boolean().optional(),
     can_float: z.boolean().optional(),
     has_synchro: z.boolean().optional(),
