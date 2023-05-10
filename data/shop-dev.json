@@ -92,8 +92,7 @@
               "name": "us_m5a1_stuart_canadian_5st_arm",
               "rank": 2,
               "reqAir": "",
-              "gift": true,
-              "hidden": true
+              "gift": true
             },
             { "name": "us_mk1_grant", "rank": 2, "reqAir": "" },
             { "name": "us_m4a5_ram_2", "rank": 2, "reqAir": "" },
@@ -149,7 +148,12 @@
           [{ "name": "us_m18_hellcat", "rank": 3 }],
           [
             { "name": "us_t14", "rank": 3, "reqAir": "" },
-            { "name": "us_m18_hellcat_black_cat", "rank": 3, "reqAir": "" },
+            {
+              "name": "us_m18_hellcat_black_cat",
+              "rank": 3,
+              "reqAir": "",
+              "gift": true
+            },
             {
               "name": "us_m18_hellcat_black_cat_race",
               "rank": 3,
@@ -876,16 +880,10 @@
             { "name": "b-29", "rank": 4 }
           ],
           [
-            {
-              "name": "p-51d-10",
-              "rank": 4,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            },
+            { "name": "p-51d-10", "rank": 4, "reqAir": "", "gift": true },
             { "name": "p-51d-20-na", "rank": 4, "reqAir": "", "gift": true },
             { "name": "xa_38", "rank": 4, "reqAir": "" },
-            { "name": "p-47m-1-re", "rank": 4, "reqAir": "", "hidden": true },
+            { "name": "p-47m-1-re", "rank": 4, "reqAir": "", "gift": true },
             {
               "name": "p-47m-1-re_boxted",
               "rank": 4,
@@ -3236,13 +3234,7 @@
             { "name": "ussr_m53_59", "rank": 4 }
           ],
           [
-            {
-              "name": "ussr_t_34_85E",
-              "rank": 4,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            },
+            { "name": "ussr_t_34_85E", "rank": 4, "reqAir": "", "gift": true },
             { "name": "ussr_su_122P", "rank": 4, "reqAir": "" },
             { "name": "ussr_t_44_122", "rank": 4, "reqAir": "" },
             { "name": "ussr_t_34_100", "rank": 4, "reqAir": "" }
@@ -3253,7 +3245,7 @@
               "name": "ussr_is_2_1944_revenge",
               "rank": 4,
               "reqAir": "",
-              "hidden": true
+              "gift": true
             },
             {
               "name": "ussr_object_248",
@@ -3891,13 +3883,7 @@
               "gift": true,
               "hidden": true
             },
-            {
-              "name": "yak-9m",
-              "rank": 3,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            },
+            { "name": "yak-9m", "rank": 3, "reqAir": "", "gift": true },
             { "name": "pe-2-205", "rank": 3, "reqAir": "", "hidden": true },
             {
               "name": "tu-2_early",
@@ -3989,13 +3975,7 @@
             }
           ],
           [
-            {
-              "name": "la-7_dolgushin",
-              "rank": 4,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            },
+            { "name": "la-7_dolgushin", "rank": 4, "reqAir": "", "gift": true },
             { "name": "su_6_single", "rank": 4, "reqAir": "" },
             { "name": "be_6", "rank": 4, "reqAir": "" },
             {
@@ -4639,7 +4619,7 @@
               "name": "uk_17_pdr_m10_achilles_norfolk_yeomanry",
               "rank": 3,
               "reqAir": "",
-              "hidden": true
+              "gift": true
             },
             { "name": "uk_sherman_ic_firefly", "rank": 3, "reqAir": "" },
             { "name": "uk_ac4_thunderbolt", "rank": 3, "reqAir": "" }
@@ -5205,14 +5185,13 @@
               "name": "spitfire_fr_mk14e",
               "rank": 4,
               "reqAir": "",
-              "gift": true,
-              "hidden": true
+              "gift": true
             },
             {
               "name": "spitfire_ix_plagis",
               "rank": 4,
               "reqAir": "",
-              "hidden": true
+              "gift": true
             }
           ]
         ],
