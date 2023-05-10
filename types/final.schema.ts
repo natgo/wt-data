@@ -446,6 +446,7 @@ export const shipTypeSchema = z.object({
     "type_heavy_cruiser",
     "type_destroyer",
   ]),
+  extended_type: z.undefined(),
 });
 
 export const shipPropsSchema = finalPropsSchema
