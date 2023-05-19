@@ -857,7 +857,7 @@
       "wikiname": "QF 3.7 Ram",
       "marketplace": "QF 3.7 Ram (Britain)"
     },
-    { "intname": "uk_centurion_mk_2" },
+    { "intname": "uk_centurion_mk_2", "wikiname": "Centurion Mk.2" },
     {
       "intname": "uk_centurion_mk_5_raac",
       "wikiname": "Centurion Mk.5/1",
@@ -1117,10 +1117,10 @@
     { "intname": "it_m60a1_ariete", "wikiname": "M60A1 \"D.C.Ariete\"" },
     { "intname": "it_of_40_mtca", "wikiname": "OF-40 (MTCA)" },
     { "intname": "it_vrcc_centauro", "wikiname": "VRCC", "store": "11443" },
-    { "intname": "it_toldi_II_a", "wikiname": "Toldi IIA (Italy)" },
-    { "intname": "it_41m_turan_2", "wikiname": "Turan II (Italy)" },
+    { "intname": "it_toldi_II_a", "wikiname": "Toldi IIA" },
+    { "intname": "it_41m_turan_2", "wikiname": "Turan II" },
     { "intname": "it_p_26_40", "wikiname": "P40 \"G.C. Leoncello\"" },
-    { "intname": "it_44m_zrinyi_1", "wikiname": "Zrinyi I (Italy)" },
+    { "intname": "it_44m_zrinyi_1", "wikiname": "Zrinyi I" },
     {
       "intname": "it_aubl_74_60_70m",
       "wikiname": "AUBL/74 HVG",
@@ -1738,11 +1738,7 @@
       "intname": "hunter_f58_switzerland",
       "wikiname": "Hunter F.58 (Germany)"
     },
-    {
-      "intname": "mig-21_sps_k",
-      "wikiname": "MiG-21 SPS-K (Germany)",
-      "store": "10592"
-    },
+    { "intname": "mig-21_sps_k", "wikiname": "MiG-21 SPS-K (Germany)" },
     {
       "intname": "f-4f",
       "wikiname": "F-4F Early (Germany)",
@@ -1983,7 +1979,7 @@
     { "intname": "mig-15bis_ish", "wikiname": "MiG-15bis ISH" },
     { "intname": "mig-17_cuba", "wikiname": "MiG-17AS" },
     { "intname": "yak-38", "wikiname": "Yak-38" },
-    { "intname": "su-7bmk", "wikiname": "Su-7BMK", "store": "10173" },
+    { "intname": "su-7bmk", "wikiname": "Su-7BMK" },
     { "intname": "su_25k", "wikiname": "Su-25K", "store": "11444" },
     { "intname": "su_22m3", "wikiname": "Su-22M3" },
     { "intname": "mig_23ml", "wikiname": "MiG-23ML", "store": "11807" },
@@ -2334,7 +2330,7 @@
       "intname": "f-86f-40_japan_blue_impulse",
       "wikiname": "F-86F-40 JASDF (Japan)"
     },
-    { "intname": "t2_early", "wikiname": "T-2 Early", "store": "11591" },
+    { "intname": "t2_early", "wikiname": "T-2 Early" },
     { "intname": "f-4ej_adtw", "wikiname": "F-4EJ ADTW", "store": "11826" },
     {
       "intname": "ki_21_1hei",
@@ -2613,7 +2609,7 @@
       "intname": "md_460_yt_cup_2019",
       "wikiname": "Super Mystere B2 (YouTube Cup)"
     },
-    { "intname": "mirage_milan", "wikiname": "Milan", "store": "10892" },
+    { "intname": "mirage_milan", "wikiname": "Milan" },
     {
       "intname": "mirage_f1c_200",
       "wikiname": "Mirage F1C-200",
@@ -2709,12 +2705,12 @@
       "wikiname": "Fokker D.XXI (Sweden)",
       "store": "9855"
     },
-    { "intname": "p-51b_7_sweden" },
+    { "intname": "p-51b_7_sweden", "wikiname": "J26 David" },
     { "intname": "pyorremyrsky", "wikiname": "VL Pyörremyrsky" },
     { "intname": "bf-109g-6_finland", "wikiname": "Bf 109 G-6 (Sweden)" },
     { "intname": "saab_105oe", "wikiname": "SAAB-105OE" },
     { "intname": "saab_j29d", "wikiname": "J29D" },
-    { "intname": "saab_j35a", "wikiname": "J35A", "store": "10409" },
+    { "intname": "saab_j35a", "wikiname": "J35A" },
     { "intname": "saab_j35xs", "wikiname": "Saab J35XS", "store": "11813" },
     { "intname": "vl_myrsky_2_late", "wikiname": "VL Myrsky II" },
     { "intname": "spitfire_mk9c_iaf", "wikiname": "Spitfire Mk IXc (Israel)" },
@@ -2754,11 +2750,7 @@
       "store": "10590"
     },
     { "intname": "f-84f_israel_iaf", "wikiname": "F-84F (Israel)" },
-    {
-      "intname": "a_4e_late_iaf",
-      "wikiname": "A-4E (Israel)",
-      "store": "10591"
-    },
+    { "intname": "a_4e_late_iaf", "wikiname": "A-4E (Israel)" },
     {
       "intname": "kfir_c2",
       "wikiname": "Kfir C.2",
@@ -3255,7 +3247,7 @@
     },
     { "intname": "germ_ls_class", "wikiname": "LS 4 Esau" },
     { "intname": "germ_s38", "wikiname": "S-38b" },
-    { "intname": "germ_s38b", "wikiname": "SC-497" },
+    { "intname": "germ_s38b", "wikiname": "S-701" },
     { "intname": "germ_s_100_class", "wikiname": "S-204 Lang" },
     { "intname": "germ_s_100_s_174_class", "wikiname": "S-100" },
     { "intname": "germ_pr_131", "wikiname": "VAS 201" },
@@ -3292,7 +3284,7 @@
       "wikiname": "Bussard",
       "marketplace": "id50147_bussard_germany"
     },
-    { "intname": "germ_s_700_s_701" },
+    { "intname": "germ_s_700_s_701", "wikiname": "SC-497" },
     { "intname": "germ_skr_pr50_karl_marx", "wikiname": "Karlsruhe" },
     {
       "intname": "germ_frigate_koln_lubeck",

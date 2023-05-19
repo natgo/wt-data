@@ -2592,7 +2592,13 @@
               "reqAir": "",
               "clanVehicle": true
             },
-            { "name": "mig-21_sps_k", "rank": 6, "reqAir": "", "gift": true }
+            {
+              "name": "mig-21_sps_k",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            }
           ],
           []
         ],
@@ -4123,7 +4129,13 @@
               "gift": true,
               "hidden": true
             },
-            { "name": "su-7bmk", "rank": 6, "reqAir": "", "gift": true },
+            {
+              "name": "su-7bmk",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            },
             { "name": "su_25k", "rank": 6, "reqAir": "", "gift": true }
           ],
           [
@@ -6085,7 +6097,15 @@
           [],
           [],
           [],
-          [{ "name": "t2_early", "rank": 6, "reqAir": "", "gift": true }],
+          [
+            {
+              "name": "t2_early",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            }
+          ],
           []
         ],
         [
@@ -7900,7 +7920,13 @@
               "reqAir": "",
               "hidden": true
             },
-            { "name": "mirage_milan", "rank": 6, "reqAir": "", "gift": true }
+            {
+              "name": "mirage_milan",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            }
           ],
           [
             {
@@ -8309,7 +8335,15 @@
           [{ "name": "saab_a32a", "rank": 6 }],
           [],
           [{ "name": "hunter_f50_sweden", "rank": 6 }],
-          [{ "name": "saab_j35a", "rank": 6, "reqAir": "", "gift": true }],
+          [
+            {
+              "name": "saab_j35a",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            }
+          ],
           []
         ],
         [
@@ -8500,7 +8534,15 @@
             { "name": "a_4n", "rank": 6 }
           ],
           "drawArrow",
-          [{ "name": "a_4e_late_iaf", "rank": 6, "reqAir": "", "gift": true }]
+          [
+            {
+              "name": "a_4e_late_iaf",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true,
+              "hidden": true
+            }
+          ]
         ],
         [
           [
