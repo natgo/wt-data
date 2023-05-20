@@ -48,6 +48,8 @@
               "horsepower": { "type": "number" },
               "gears_forward": { "type": "number" },
               "gears_backward": { "type": "number" },
+              "maxSpeedRB": { "type": "array", "items": { "type": "number" } },
+              "maxSpeedAB": { "type": "array", "items": { "type": "number" } },
               "hydro_suspension": { "type": "boolean" },
               "can_float": { "type": "boolean" },
               "has_synchro": { "type": "boolean" },
@@ -923,7 +925,8 @@
                   "type_heavy_cruiser",
                   "type_destroyer"
                 ]
-              }
+              },
+              "extended_type": { "not": {} }
             },
             "required": [
               "intname",
