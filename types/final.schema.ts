@@ -330,6 +330,7 @@ export const genericGunSchema = z.object({
   shells: z.array(shellSchema).optional(),
   belts: z.array(shellBeltSchema).optional(),
   shotFreq: z.number(),
+  reloadTime: z.number().optional(),
   caliber: z.number(),
   horizonalSpeed: z.union([z.number(), z.literal("primary")]),
   verticalSpeed: z.union([z.number(), z.literal("primary")]),
