@@ -88,6 +88,7 @@
     { "intname": "fr_b1_ter", "visibility": 112 },
     { "intname": "ussr_ba_11", "visibility": 84 },
     { "intname": "ussr_bm_13n", "visibility": 75 },
+    { "intname": "ussr_bm_31_12", "visibility": 75 },
     { "intname": "ussr_bm_8_24", "visibility": 125 },
     { "intname": "ussr_bmd_4", "visibility": 78 },
     { "intname": "ussr_bmp_1", "visibility": 70 },

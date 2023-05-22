@@ -496,9 +496,9 @@ export const vehicleTypesSchema = z.union([
 
 export const finalSchema = z.object({
   version: z.string(),
-  ground: z.array(groundPropsSchema),
-  aircraft: z.array(aircraftPropsSchema),
-  helicopter: z.array(helicopterPropsSchema),
+  army: z.array(groundPropsSchema),
+  aviation: z.array(aircraftPropsSchema),
+  helicopters: z.array(helicopterPropsSchema),
   ship: z.array(shipPropsSchema),
   boat: z.array(boatPropsSchema),
 });
