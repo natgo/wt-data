@@ -175,7 +175,7 @@ export const aircraftTypeSchema = z.object({
 export const aircraftPropsSchema = finalPropsSchema
   .extend({
     crew: z.number().optional(),
-    type: z.literal("aircraft"),
+    type: z.literal("aviation"),
     ballistic_computer: ballisticComputerSchema.optional(),
     secondary_weapon_preset: secondaryWeaponPresetSchema.optional(),
   })
@@ -366,7 +366,7 @@ export const groundTypeSchema = z.object({
 
 export const groundPropsSchema = finalPropsSchema
   .extend({
-    type: z.literal("ground"),
+    type: z.literal("army"),
     mass: z.number().optional(),
     horsepower: z.number().optional(),
     gears_forward: z.number().optional(),
@@ -427,7 +427,7 @@ export const helicopterTypeSchema = z.object({
 
 export const helicopterPropsSchema = finalPropsSchema
   .extend({
-    type: z.literal("helicopter"),
+    type: z.literal("helicopters"),
     ballistic_computer: ballisticComputerSchema.optional(),
     secondary_weapon_preset: secondaryWeaponPresetSchema.optional(),
     has_maw: z.boolean().optional(),
