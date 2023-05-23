@@ -5,7 +5,7 @@
       "type": "object",
       "properties": {
         "version": { "type": "string" },
-        "ground": {
+        "army": {
           "type": "array",
           "items": {
             "type": "object",
@@ -43,7 +43,7 @@
               "hidden": { "type": "boolean" },
               "marketplace": { "type": "string" },
               "store": { "type": "string" },
-              "type": { "type": "string", "const": "ground" },
+              "type": { "type": "string", "const": "army" },
               "mass": { "type": "number" },
               "horsepower": { "type": "number" },
               "gears_forward": { "type": "number" },
@@ -125,10 +125,10 @@
                     "type": "object",
                     "properties": {
                       "ir": {
-                        "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/driver/properties/ir"
+                        "$ref": "#/definitions/final/properties/army/items/properties/optics/properties/driver/properties/ir"
                       },
                       "thermal": {
-                        "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/driver/properties/thermal"
+                        "$ref": "#/definitions/final/properties/army/items/properties/optics/properties/driver/properties/thermal"
                       },
                       "zoomInFov": { "type": "number" },
                       "zoomOutFov": { "type": "number" }
@@ -137,7 +137,7 @@
                     "additionalProperties": false
                   },
                   "commander": {
-                    "$ref": "#/definitions/final/properties/ground/items/properties/optics/properties/gunner"
+                    "$ref": "#/definitions/final/properties/army/items/properties/optics/properties/gunner"
                   }
                 },
                 "required": ["gunner"],
@@ -198,6 +198,7 @@
                           }
                         },
                         "shotFreq": { "type": "number" },
+                        "reloadTime": { "type": "number" },
                         "caliber": { "type": "number" },
                         "horizonalSpeed": {
                           "anyOf": [
@@ -267,37 +268,40 @@
                       "type": "object",
                       "properties": {
                         "intname": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/intname"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/intname"
                         },
                         "displayname": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/displayname"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/displayname"
                         },
                         "ammo": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/ammo"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/ammo"
                         },
                         "shells": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/shells"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/shells"
                         },
                         "belts": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/belts"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/belts"
                         },
                         "shotFreq": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/shotFreq"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/shotFreq"
+                        },
+                        "reloadTime": {
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/reloadTime"
                         },
                         "caliber": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/caliber"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/caliber"
                         },
                         "horizonalSpeed": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/horizonalSpeed"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/horizonalSpeed"
                         },
                         "verticalSpeed": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/verticalSpeed"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/verticalSpeed"
                         },
                         "horizonalLimit": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/horizonalLimit"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/horizonalLimit"
                         },
                         "verticalLimit": {
-                          "$ref": "#/definitions/final/properties/ground/items/properties/weapons/properties/cannon/items/properties/verticalLimit"
+                          "$ref": "#/definitions/final/properties/army/items/properties/weapons/properties/cannon/items/properties/verticalLimit"
                         }
                       },
                       "required": [
@@ -351,70 +355,70 @@
             "additionalProperties": false
           }
         },
-        "aircraft": {
+        "aviation": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
               "intname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+                "$ref": "#/definitions/final/properties/army/items/properties/intname"
               },
               "wikiname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+                "$ref": "#/definitions/final/properties/army/items/properties/wikiname"
               },
               "displayname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+                "$ref": "#/definitions/final/properties/army/items/properties/displayname"
               },
               "country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+                "$ref": "#/definitions/final/properties/army/items/properties/country"
               },
               "operator_country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+                "$ref": "#/definitions/final/properties/army/items/properties/operator_country"
               },
               "rank": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+                "$ref": "#/definitions/final/properties/army/items/properties/rank"
               },
               "crew": { "type": "number" },
               "sl_price": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_price"
               },
               "reqRP": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+                "$ref": "#/definitions/final/properties/army/items/properties/reqRP"
               },
               "br": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+                "$ref": "#/definitions/final/properties/army/items/properties/br"
               },
               "realbr": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+                "$ref": "#/definitions/final/properties/army/items/properties/realbr"
               },
               "base_repair": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+                "$ref": "#/definitions/final/properties/army/items/properties/base_repair"
               },
               "rp_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/rp_multiplyer"
               },
               "sl_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
               "prem_type": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
               },
               "event": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+                "$ref": "#/definitions/final/properties/army/items/properties/event"
               },
               "cost_gold": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+                "$ref": "#/definitions/final/properties/army/items/properties/cost_gold"
               },
               "hidden": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+                "$ref": "#/definitions/final/properties/army/items/properties/hidden"
               },
               "marketplace": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+                "$ref": "#/definitions/final/properties/army/items/properties/marketplace"
               },
               "store": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+                "$ref": "#/definitions/final/properties/army/items/properties/store"
               },
-              "type": { "type": "string", "const": "aircraft" },
+              "type": { "type": "string", "const": "aviation" },
               "ballistic_computer": {
                 "type": "object",
                 "properties": {
@@ -499,26 +503,7 @@
                                     "type": "object",
                                     "properties": {
                                       "type": {
-                                        "anyOf": [
-                                          {
-                                            "type": "string",
-                                            "enum": [
-                                              "aam",
-                                              "agm",
-                                              "bomb",
-                                              "guided_bomb",
-                                              "torpedo",
-                                              "rocket",
-                                              "gun",
-                                              "countermeasures",
-                                              "fuel_tank",
-                                              "optics",
-                                              "targeting_pod",
-                                              "booster"
-                                            ]
-                                          },
-                                          { "type": "null" }
-                                        ]
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/weapons/items/properties/type"
                                       },
                                       "bullets": { "type": "number" },
                                       "intname": { "type": "string" },
@@ -562,13 +547,13 @@
                                     "type": "object",
                                     "properties": {
                                       "intname": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/intname"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/intname"
                                       },
                                       "reqModification": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/reqModification"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/reqModification"
                                       },
                                       "weapons": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/weapons"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/weapons"
                                       },
                                       "iconType": { "type": "string" }
                                     },
@@ -583,19 +568,19 @@
                                     "type": "object",
                                     "properties": {
                                       "type": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/type"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/0/properties/weapons/items/properties/type"
                                       },
                                       "bullets": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/bullets"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/bullets"
                                       },
                                       "intname": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/intname"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/intname"
                                       },
                                       "displayname": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/displayname"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/displayname"
                                       },
                                       "reqModification": {
-                                        "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/reqModification"
+                                        "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset/properties/weaponSlots/items/anyOf/0/properties/slot/items/anyOf/1/properties/reqModification"
                                       },
                                       "iconType": { "type": "string" }
                                     },
@@ -676,77 +661,77 @@
             "additionalProperties": false
           }
         },
-        "helicopter": {
+        "helicopters": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
               "intname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+                "$ref": "#/definitions/final/properties/army/items/properties/intname"
               },
               "wikiname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+                "$ref": "#/definitions/final/properties/army/items/properties/wikiname"
               },
               "displayname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+                "$ref": "#/definitions/final/properties/army/items/properties/displayname"
               },
               "country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+                "$ref": "#/definitions/final/properties/army/items/properties/country"
               },
               "operator_country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+                "$ref": "#/definitions/final/properties/army/items/properties/operator_country"
               },
               "rank": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+                "$ref": "#/definitions/final/properties/army/items/properties/rank"
               },
               "crew": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+                "$ref": "#/definitions/final/properties/army/items/properties/crew"
               },
               "sl_price": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_price"
               },
               "reqRP": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+                "$ref": "#/definitions/final/properties/army/items/properties/reqRP"
               },
               "br": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+                "$ref": "#/definitions/final/properties/army/items/properties/br"
               },
               "realbr": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+                "$ref": "#/definitions/final/properties/army/items/properties/realbr"
               },
               "base_repair": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+                "$ref": "#/definitions/final/properties/army/items/properties/base_repair"
               },
               "rp_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/rp_multiplyer"
               },
               "sl_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
               "prem_type": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
               },
               "event": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+                "$ref": "#/definitions/final/properties/army/items/properties/event"
               },
               "cost_gold": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+                "$ref": "#/definitions/final/properties/army/items/properties/cost_gold"
               },
               "hidden": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+                "$ref": "#/definitions/final/properties/army/items/properties/hidden"
               },
               "marketplace": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+                "$ref": "#/definitions/final/properties/army/items/properties/marketplace"
               },
               "store": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+                "$ref": "#/definitions/final/properties/army/items/properties/store"
               },
-              "type": { "type": "string", "const": "helicopter" },
+              "type": { "type": "string", "const": "helicopters" },
               "ballistic_computer": {
-                "$ref": "#/definitions/final/properties/aircraft/items/properties/ballistic_computer"
+                "$ref": "#/definitions/final/properties/aviation/items/properties/ballistic_computer"
               },
               "secondary_weapon_preset": {
-                "$ref": "#/definitions/final/properties/aircraft/items/properties/secondary_weapon_preset"
+                "$ref": "#/definitions/final/properties/aviation/items/properties/secondary_weapon_preset"
               },
               "has_maw": { "type": "boolean" },
               "has_lws": { "type": "boolean" },
@@ -782,13 +767,13 @@
                     "additionalProperties": false
                   },
                   "gunner": {
-                    "$ref": "#/definitions/final/properties/helicopter/items/properties/optics/properties/pilot"
+                    "$ref": "#/definitions/final/properties/helicopters/items/properties/optics/properties/pilot"
                   },
                   "sight": {
                     "type": "object",
                     "properties": {
                       "ir": {
-                        "$ref": "#/definitions/final/properties/helicopter/items/properties/optics/properties/pilot/properties/ir"
+                        "$ref": "#/definitions/final/properties/helicopters/items/properties/optics/properties/pilot/properties/ir"
                       },
                       "zoomInFov": { "type": "number" },
                       "zoomOutFov": { "type": "number" },
@@ -855,64 +840,64 @@
             "type": "object",
             "properties": {
               "intname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+                "$ref": "#/definitions/final/properties/army/items/properties/intname"
               },
               "wikiname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+                "$ref": "#/definitions/final/properties/army/items/properties/wikiname"
               },
               "displayname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+                "$ref": "#/definitions/final/properties/army/items/properties/displayname"
               },
               "country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+                "$ref": "#/definitions/final/properties/army/items/properties/country"
               },
               "operator_country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+                "$ref": "#/definitions/final/properties/army/items/properties/operator_country"
               },
               "rank": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+                "$ref": "#/definitions/final/properties/army/items/properties/rank"
               },
               "crew": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+                "$ref": "#/definitions/final/properties/army/items/properties/crew"
               },
               "sl_price": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_price"
               },
               "reqRP": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+                "$ref": "#/definitions/final/properties/army/items/properties/reqRP"
               },
               "br": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+                "$ref": "#/definitions/final/properties/army/items/properties/br"
               },
               "realbr": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+                "$ref": "#/definitions/final/properties/army/items/properties/realbr"
               },
               "base_repair": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+                "$ref": "#/definitions/final/properties/army/items/properties/base_repair"
               },
               "rp_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/rp_multiplyer"
               },
               "sl_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
               "prem_type": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
               },
               "event": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+                "$ref": "#/definitions/final/properties/army/items/properties/event"
               },
               "cost_gold": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+                "$ref": "#/definitions/final/properties/army/items/properties/cost_gold"
               },
               "hidden": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+                "$ref": "#/definitions/final/properties/army/items/properties/hidden"
               },
               "marketplace": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+                "$ref": "#/definitions/final/properties/army/items/properties/marketplace"
               },
               "store": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+                "$ref": "#/definitions/final/properties/army/items/properties/store"
               },
               "type": { "type": "string", "const": "ship" },
               "normal_type": {
@@ -952,64 +937,64 @@
             "type": "object",
             "properties": {
               "intname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/intname"
+                "$ref": "#/definitions/final/properties/army/items/properties/intname"
               },
               "wikiname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/wikiname"
+                "$ref": "#/definitions/final/properties/army/items/properties/wikiname"
               },
               "displayname": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/displayname"
+                "$ref": "#/definitions/final/properties/army/items/properties/displayname"
               },
               "country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/country"
+                "$ref": "#/definitions/final/properties/army/items/properties/country"
               },
               "operator_country": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/operator_country"
+                "$ref": "#/definitions/final/properties/army/items/properties/operator_country"
               },
               "rank": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rank"
+                "$ref": "#/definitions/final/properties/army/items/properties/rank"
               },
               "crew": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/crew"
+                "$ref": "#/definitions/final/properties/army/items/properties/crew"
               },
               "sl_price": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_price"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_price"
               },
               "reqRP": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/reqRP"
+                "$ref": "#/definitions/final/properties/army/items/properties/reqRP"
               },
               "br": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/br"
+                "$ref": "#/definitions/final/properties/army/items/properties/br"
               },
               "realbr": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/realbr"
+                "$ref": "#/definitions/final/properties/army/items/properties/realbr"
               },
               "base_repair": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/base_repair"
+                "$ref": "#/definitions/final/properties/army/items/properties/base_repair"
               },
               "rp_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/rp_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/rp_multiplyer"
               },
               "sl_multiplyer": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/sl_multiplyer"
+                "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
               "prem_type": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/prem_type"
+                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
               },
               "event": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/event"
+                "$ref": "#/definitions/final/properties/army/items/properties/event"
               },
               "cost_gold": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/cost_gold"
+                "$ref": "#/definitions/final/properties/army/items/properties/cost_gold"
               },
               "hidden": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/hidden"
+                "$ref": "#/definitions/final/properties/army/items/properties/hidden"
               },
               "marketplace": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/marketplace"
+                "$ref": "#/definitions/final/properties/army/items/properties/marketplace"
               },
               "store": {
-                "$ref": "#/definitions/final/properties/ground/items/properties/store"
+                "$ref": "#/definitions/final/properties/army/items/properties/store"
               },
               "type": { "type": "string", "const": "boat" },
               "normal_type": {
@@ -1056,9 +1041,9 @@
       },
       "required": [
         "version",
-        "ground",
-        "aircraft",
-        "helicopter",
+        "army",
+        "aviation",
+        "helicopters",
         "ship",
         "boat"
       ],

@@ -4,7 +4,7 @@
     "modifications": {
       "type": "object",
       "properties": {
-        "ground": {
+        "army": {
           "type": "array",
           "items": {
             "type": "object",
@@ -35,7 +35,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -44,7 +44,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -53,7 +53,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -62,7 +62,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -71,7 +71,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -80,7 +80,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -89,7 +89,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -98,7 +98,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -107,7 +107,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -116,7 +116,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   },
@@ -125,7 +125,7 @@
                     "items": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/definitions/modifications/properties/ground/items/properties/mods/properties/lth/items/items"
+                        "$ref": "#/definitions/modifications/properties/army/items/properties/mods/properties/lth/items/items"
                       }
                     }
                   }
@@ -137,32 +137,32 @@
             "additionalProperties": false
           }
         },
-        "aircraft": {
+        "aviation": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/modifications/properties/ground/items"
+            "$ref": "#/definitions/modifications/properties/army/items"
           }
         },
-        "helicopter": {
+        "helicopters": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/modifications/properties/ground/items"
+            "$ref": "#/definitions/modifications/properties/army/items"
           }
         },
         "ship": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/modifications/properties/ground/items"
+            "$ref": "#/definitions/modifications/properties/army/items"
           }
         },
         "boat": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/modifications/properties/ground/items"
+            "$ref": "#/definitions/modifications/properties/army/items"
           }
         }
       },
-      "required": ["ground", "aircraft", "helicopter", "ship", "boat"],
+      "required": ["army", "aviation", "helicopters", "ship", "boat"],
       "additionalProperties": false
     }
   },
