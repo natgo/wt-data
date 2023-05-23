@@ -54,45 +54,33 @@ export const ballisticComputerSchema = z.object({
 });
 export type BallisticComputer = z.infer<typeof ballisticComputerSchema>;
 
+export const weaponType = z
+  .union([
+    z.literal("aam"),
+    z.literal("agm"),
+    z.literal("bomb"),
+    z.literal("guided_bomb"),
+    z.literal("torpedo"),
+    z.literal("rocket"),
+    z.literal("gun"),
+    z.literal("countermeasures"),
+    z.literal("fuel_tank"),
+    z.literal("optics"),
+    z.literal("targeting_pod"),
+    z.literal("booster"),
+  ])
+  .nullable();
+export type WeaponType = z.infer<typeof weaponType>;
+
 export const finalWeaponArraySchema = z.object({
-  type: z
-    .union([
-      z.literal("aam"),
-      z.literal("agm"),
-      z.literal("bomb"),
-      z.literal("guided_bomb"),
-      z.literal("torpedo"),
-      z.literal("rocket"),
-      z.literal("gun"),
-      z.literal("countermeasures"),
-      z.literal("fuel_tank"),
-      z.literal("optics"),
-      z.literal("targeting_pod"),
-      z.literal("booster"),
-    ])
-    .nullable(),
+  type: weaponType,
   displayname: z.string().optional(),
   bullets: z.number().optional(),
 });
 export type FinalWeaponArray = z.infer<typeof finalWeaponArraySchema>;
 
 export const weaponSchema = z.object({
-  type: z
-    .union([
-      z.literal("aam"),
-      z.literal("agm"),
-      z.literal("bomb"),
-      z.literal("guided_bomb"),
-      z.literal("torpedo"),
-      z.literal("rocket"),
-      z.literal("gun"),
-      z.literal("countermeasures"),
-      z.literal("fuel_tank"),
-      z.literal("optics"),
-      z.literal("targeting_pod"),
-      z.literal("booster"),
-    ])
-    .nullable(),
+  type: weaponType,
   bullets: z.number().optional(),
   intname: z.string(),
   displayname: z.string().optional(),

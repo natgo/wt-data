@@ -4762,7 +4762,8 @@
               "gift": true,
               "marketplace": 50124,
               "event": "battlepass_season2"
-            }
+            },
+            { "name": "uk_vijayanta", "rank": 5, "reqAir": "", "hidden": true }
           ]
         ],
         [
@@ -4820,14 +4821,7 @@
               "reqAir": "",
               "gift": true
             },
-            { "name": "uk_khalid", "rank": 6, "reqAir": "" },
-            {
-              "name": "uk_t_90s_bheeshma",
-              "rank": 6,
-              "reqAir": "",
-              "hidden": true,
-              "clanVehicle": true
-            }
+            { "name": "uk_khalid", "rank": 6, "reqAir": "" }
           ]
         ],
         [
@@ -6425,15 +6419,8 @@
         ],
         [
           [
-            {
-              "name": "cn_76_211_group",
-              "displayname": "cn_76_211_group",
-              "image": "cn_76_211_group",
-              "vehicles": [
-                { "name": "cn_object_211", "rank": 3 },
-                { "name": "cn_pt_76", "rank": 3, "reqAir": "", "hidden": true }
-              ]
-            }
+            { "name": "cn_object_211", "rank": 3 },
+            { "name": "cn_pt_76", "rank": 3, "reqAir": "cn_m24_chaffee" }
           ],
           [
             { "name": "cn_m4a1_76w_sherman", "rank": 3 },
@@ -6461,7 +6448,7 @@
         ],
         [
           [
-            { "name": "cn_type_63_I", "rank": 4, "reqAir": "cn_m24_chaffee" },
+            { "name": "cn_type_63_I", "rank": 4 },
             { "name": "cn_type_62", "rank": 4 }
           ],
           [
@@ -7657,7 +7644,18 @@
             { "name": "fr_sk105_a2", "rank": 6 }
           ],
           [
-            { "name": "fr_amx_30_super", "rank": 6, "reqAir": "", "gift": true }
+            {
+              "name": "fr_amx_30_super",
+              "rank": 6,
+              "reqAir": "",
+              "gift": true
+            },
+            {
+              "name": "fr_vbci2_mct30",
+              "rank": 6,
+              "reqAir": "",
+              "hidden": true
+            }
           ],
           []
         ],
@@ -8030,8 +8028,8 @@
       "needVehicles": [2, 2, 3, 2],
       "range": [
         [
-          [{ "name": "fr_destroyer_jaguar_class_chacal", "rank": 1 }],
           [{ "name": "fr_destroyer_bourrasque_class_bourrasque", "rank": 1 }],
+          [{ "name": "fr_destroyer_jaguar_class_chacal", "rank": 1 }],
           [
             {
               "name": "fr_destroyer_jaguar_class_panthere",
@@ -8516,6 +8514,12 @@
           ],
           [
             { "name": "il_centurion_shot_kal_d", "rank": 6, "reqAir": "" },
+            {
+              "name": "il_magach_6b_gal",
+              "rank": 6,
+              "reqAir": "",
+              "clanVehicle": true
+            },
             {
               "name": "il_merkava_mk_2d",
               "rank": 6,

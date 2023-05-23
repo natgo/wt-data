@@ -862,13 +862,13 @@
       "wikiname": "Centurion Mk.5/1",
       "marketplace": "items_Centurion Mk.5/1 (RAAC) (Britain)"
     },
+    { "intname": "uk_vijayanta" },
     {
       "intname": "uk_rooikat_105_td",
       "wikiname": "Rooikat 105",
       "store": "8262"
     },
     { "intname": "uk_khalid", "wikiname": "Khalid" },
-    { "intname": "uk_t_90s_bheeshma" },
     { "intname": "jp_type_95_ha_go", "wikiname": "Ha-Go" },
     { "intname": "jp_type_98_ke_ni", "wikiname": "Ke-Ni" },
     { "intname": "jp_type_2_ka_mi", "wikiname": "Ka-Mi" },
@@ -1210,6 +1210,7 @@
       "wikiname": "AMX-30 Super",
       "store": "6881"
     },
+    { "intname": "fr_vbci2_mct30" },
     {
       "intname": "fr_amd_35_sa35",
       "wikiname": "AMD.35 (SA35)",
@@ -1355,6 +1356,7 @@
     { "intname": "il_m_51_w", "wikiname": "M-51 (W)", "store": "10705" },
     { "intname": "il_magach_3", "wikiname": "Magach 3 (ERA)" },
     { "intname": "il_centurion_shot_kal_d", "wikiname": "Sho't Kal Dalet" },
+    { "intname": "il_magach_6b_gal" },
     {
       "intname": "il_merkava_mk_2d",
       "wikiname": "Merkava Mk.2D",
@@ -3219,12 +3221,12 @@
       "intname": "it_destroyer_soldati_serie1_geniere",
       "wikiname": "RN Leone"
     },
-    { "intname": "fr_destroyer_jaguar_class_chacal" },
+    { "intname": "fr_destroyer_bourrasque_class_bourrasque" },
     { "intname": "fr_destroyer_aigle_class_vautour" },
     { "intname": "fr_destroyer_le_fantasque_class_le_malin" },
     { "intname": "fr_cruiser_dugauy_class_primaguet" },
     { "intname": "fr_cruiser_suffren_class_colbert" },
-    { "intname": "fr_destroyer_bourrasque_class_bourrasque" },
+    { "intname": "fr_destroyer_jaguar_class_chacal" },
     { "intname": "fr_destroyer_aigle_class_milan" },
     { "intname": "fr_cruiser_jeanne_darc" },
     { "intname": "fr_destroyer_jaguar_class_panthere" },
