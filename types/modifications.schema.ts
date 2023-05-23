@@ -49,9 +49,9 @@ export const vehicleModsSchema = z.object({
 export type VehicleMods = z.infer<typeof vehicleModsSchema>;
 
 export const modificationsSchema = z.object({
-  ground: z.array(vehicleModsSchema),
-  aircraft: z.array(vehicleModsSchema),
-  helicopter: z.array(vehicleModsSchema),
+  army: z.array(vehicleModsSchema),
+  aviation: z.array(vehicleModsSchema),
+  helicopters: z.array(vehicleModsSchema),
   ship: z.array(vehicleModsSchema),
   boat: z.array(vehicleModsSchema),
 });
