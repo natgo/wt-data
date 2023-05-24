@@ -351,15 +351,15 @@ export const dummyWeapon = baseWeaponSchema.extend({
 export type DummyWeapon = z.infer<typeof dummyWeapon>;
 
 // Normal cannon
-export const tankCannonSchema = z.union([
-  genericGunSchema.extend({
-    secondary: z.boolean().optional(),
-    autoloader: z.boolean().optional(),
-    stabilizer: stabilizerSchema.optional(),
-    hullAiming: hullAimingSchema.optional(),
-  }),
-  dummyWeapon,
-]);
+export const cannonSchema = genericGunSchema.extend({
+  secondary: z.boolean().optional(),
+  autoloader: z.boolean().optional(),
+  stabilizer: stabilizerSchema.optional(),
+  hullAiming: hullAimingSchema.optional(),
+});
+export type Cannon = z.infer<typeof cannonSchema>;
+
+export const tankCannonSchema = z.union([cannonSchema, dummyWeapon]);
 export type TankCannon = z.infer<typeof tankCannonSchema>;
 
 export const tankWeaponsSchema = z.object({
