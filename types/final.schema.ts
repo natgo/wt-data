@@ -311,7 +311,14 @@ export const shellBeltSchema = z.object({
 });
 export type ShellBelt = z.infer<typeof shellBeltSchema>;
 
-export const genericGunSchema = z.object({
+export const baseWeaponSchema = z.object({
+  horizonalSpeed: z.union([z.number(), z.literal("primary")]),
+  verticalSpeed: z.union([z.number(), z.literal("primary")]),
+  horizonalLimit: z.union([z.array(z.number()), z.literal("primary")]),
+  verticalLimit: z.union([z.array(z.number()), z.literal("primary")]),
+});
+
+export const genericGunSchema = baseWeaponSchema.extend({
   intname: z.string(),
   displayname: z.string(),
   ammo: z.number(),
@@ -320,24 +327,44 @@ export const genericGunSchema = z.object({
   shotFreq: z.number(),
   reloadTime: z.number().optional(),
   caliber: z.number(),
-  horizonalSpeed: z.union([z.number(), z.literal("primary")]),
-  verticalSpeed: z.union([z.number(), z.literal("primary")]),
-  horizonalLimit: z.union([z.array(z.number()), z.literal("primary")]),
-  verticalLimit: z.union([z.array(z.number()), z.literal("primary")]),
 });
 export type GenericGun = z.infer<typeof genericGunSchema>;
 
-export const tankCannonSchema = genericGunSchema.extend({
-  secondary: z.boolean().optional(),
-  autoloader: z.boolean().optional(),
-  stabilizer: stabilizerSchema.optional(),
-  hullAiming: hullAimingSchema.optional(),
+// Flamethrower
+export const flamethrower = baseWeaponSchema.extend({
+  intname: z.string(),
+  displayname: z.string(),
+  flame: z.boolean(),
+  ammo: z.number(),
+  shells: z.array(shellSchema).optional(),
+  belts: z.array(shellBeltSchema).optional(),
+  shotFreq: z.number(),
+  reloadTime: z.number().optional(),
 });
+export type Flamethrower = z.infer<typeof flamethrower>;
+
+// Dummy weapon ie. optics in 9p157
+export const dummyWeapon = baseWeaponSchema.extend({
+  dummy: z.boolean(),
+  stabilizer: stabilizerSchema.optional(),
+});
+export type DummyWeapon = z.infer<typeof dummyWeapon>;
+
+// Normal cannon
+export const tankCannonSchema = z.union([
+  genericGunSchema.extend({
+    secondary: z.boolean().optional(),
+    autoloader: z.boolean().optional(),
+    stabilizer: stabilizerSchema.optional(),
+    hullAiming: hullAimingSchema.optional(),
+  }),
+  dummyWeapon,
+]);
 export type TankCannon = z.infer<typeof tankCannonSchema>;
 
 export const tankWeaponsSchema = z.object({
   cannon: z.array(tankCannonSchema).optional(),
-  machineGun: z.array(genericGunSchema).optional(),
+  machineGun: z.array(z.union([genericGunSchema, flamethrower])).optional(),
 });
 export type TankWeapons = z.infer<typeof tankWeaponsSchema>;
 
