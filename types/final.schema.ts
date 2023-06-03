@@ -422,7 +422,10 @@ export const heliGunnerSightSchema = heliSightSchema.extend({
   zoomOutFov: z.number(),
   thermal: z
     .object({
-      resolution: z.tuple([z.literal(1024), z.literal(768)]),
+      resolution: z.tuple([
+        z.union([z.literal(1920), z.literal(1024)]),
+        z.union([z.literal(1080), z.literal(768)]),
+      ]),
       noiseFactor: z.union([z.literal(0.5), z.literal(0.05)]),
     })
     .optional(),

@@ -8061,13 +8061,7 @@
           "drawArrow",
           [
             { "name": "sw_strv_m41_s1", "rank": 2, "reqAir": "" },
-            {
-              "name": "sw_sav_fm48",
-              "rank": 2,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            }
+            { "name": "sw_sav_fm48", "rank": 2, "reqAir": "" }
           ],
           [
             {

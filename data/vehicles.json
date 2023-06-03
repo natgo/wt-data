@@ -1162,7 +1162,11 @@
     { "intname": "fr_arl_44_acl1", "wikiname": "ARL-44 (ACL-1)" },
     { "intname": "fr_m4a3e2_sherman_jumbo", "wikiname": "M4A3E2 (France)" },
     { "intname": "fr_amx_m4", "wikiname": "AMX M4" },
-    { "intname": "fr_amx_50", "wikiname": "AMX-50 (TOA100)" },
+    {
+      "intname": "fr_amx_50",
+      "wikiname": "AMX-50 (TOA100)",
+      "marketplace": "id50210_amx_50_to90_930_france"
+    },
     { "intname": "fr_amx_50_surbaisse", "wikiname": "AMX-50 Surbaisse" },
     { "intname": "fr_amx_32_105", "wikiname": "AMX-32 (105)" },
     { "intname": "fr_amx_32", "wikiname": "AMX-32" },
@@ -2524,7 +2528,11 @@
     },
     { "intname": "ro_57_quadriarma", "wikiname": "Ro.57 Quadriarma" },
     { "intname": "mc-202_d", "wikiname": "C. 202D" },
-    { "intname": "bf-109f-4_hungary", "wikiname": "Bf 109 F-4 (Italy)" },
+    {
+      "intname": "bf-109f-4_hungary",
+      "wikiname": "Bf 109 F-4 (Italy)",
+      "marketplace": "id50212_bf_109_f_4_italy"
+    },
     { "intname": "d_371", "wikiname": "D.371" },
     { "intname": "d_373", "wikiname": "D.373" },
     { "intname": "caudron_cr714", "wikiname": "C.R.714" },
