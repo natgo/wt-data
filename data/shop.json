@@ -91,8 +91,7 @@
             {
               "name": "us_m5a1_stuart_canadian_5st_arm",
               "rank": 2,
-              "reqAir": "",
-              "gift": true
+              "reqAir": ""
             },
             { "name": "us_mk1_grant", "rank": 2, "reqAir": "" },
             { "name": "us_m4a5_ram_2", "rank": 2, "reqAir": "" },
@@ -883,7 +882,7 @@
             { "name": "p-51d-10", "rank": 4, "reqAir": "", "gift": true },
             { "name": "p-51d-20-na", "rank": 4, "reqAir": "", "gift": true },
             { "name": "xa_38", "rank": 4, "reqAir": "" },
-            { "name": "p-47m-1-re", "rank": 4, "reqAir": "", "gift": true },
+            { "name": "p-47m-1-re", "rank": 4, "reqAir": "" },
             {
               "name": "p-47m-1-re_boxted",
               "rank": 4,
@@ -4630,8 +4629,7 @@
             {
               "name": "uk_17_pdr_m10_achilles_norfolk_yeomanry",
               "rank": 3,
-              "reqAir": "",
-              "gift": true
+              "reqAir": ""
             },
             { "name": "uk_sherman_ic_firefly", "rank": 3, "reqAir": "" },
             { "name": "uk_ac4_thunderbolt", "rank": 3, "reqAir": "" }
@@ -5388,14 +5386,7 @@
             { "name": "uk_cruiser_dido", "rank": 3 }
           ],
           [{ "name": "uk_destroyer_daring_class_diana", "rank": 3 }],
-          [
-            {
-              "name": "uk_destroyer_haida",
-              "rank": 3,
-              "reqAir": "",
-              "hidden": true
-            }
-          ],
+          [{ "name": "uk_destroyer_haida", "rank": 3, "reqAir": "" }],
           [
             {
               "name": "uk_destroyer_battle_cadiz",
@@ -6996,13 +6987,7 @@
               "gift": true,
               "hidden": true
             },
-            {
-              "name": "t_129_atak",
-              "rank": 6,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            }
+            { "name": "t_129_atak", "rank": 6, "reqAir": "" }
           ]
         ],
         [[{ "name": "a_129_cbt", "rank": 7 }], []]
