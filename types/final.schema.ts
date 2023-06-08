@@ -21,11 +21,25 @@ export const normalHelcopterTypeSchema = z.enum([
   "type_utility_helicopter",
 ]);
 
+export const countryname = z.enum([
+  "country_usa",
+  "country_germany",
+  "country_ussr",
+  "country_britain",
+  "country_japan",
+  "country_china",
+  "country_italy",
+  "country_france",
+  "country_sweden",
+  "country_israel",
+]);
+export type CountryName = z.infer<typeof countryname>;
+
 export const finalPropsSchema = z.object({
   intname: z.string(),
   wikiname: z.string().optional(),
   displayname: z.string().optional(),
-  country: z.string(),
+  country: countryname,
   operator_country: z.string().optional(),
   rank: vehiclRankSchema,
   crew: z.number(),
