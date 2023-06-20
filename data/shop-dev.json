@@ -2596,7 +2596,7 @@
               "reqAir": "",
               "clanVehicle": true
             },
-            { "name": "mig-21_sps_k", "rank": 6, "reqAir": "", "gift": true }
+            { "name": "mig-21_sps_k", "rank": 6, "reqAir": "" }
           ],
           []
         ],
@@ -2731,8 +2731,7 @@
             {
               "name": "germ_destroyer_class1936_z20_karlgalster",
               "rank": 3,
-              "reqAir": "",
-              "hidden": true
+              "reqAir": ""
             }
           ],
           [
@@ -2744,12 +2743,7 @@
               "hidden": true,
               "event": "battlepass_season2"
             },
-            {
-              "name": "germ_destroyer_class1939_t31",
-              "rank": 3,
-              "reqAir": "",
-              "hidden": true
-            }
+            { "name": "germ_destroyer_class1939_t31", "rank": 3, "reqAir": "" }
           ]
         ],
         [
@@ -8022,7 +8016,7 @@
       "col_normal": 2,
       "min_rank": 1,
       "max_rank": 5,
-      "needVehicles": [3, 2, 3, 1],
+      "needVehicles": [3, 2, 4, 2],
       "range": [
         [
           [
@@ -8055,7 +8049,10 @@
             { "name": "fr_destroyer_le_fantasque_class_le_malin", "rank": 3 },
             { "name": "fr_cruiser_dugauy_class_primaguet", "rank": 3 }
           ],
-          [{ "name": "fr_cruiser_jeanne_darc", "rank": 3 }],
+          [
+            { "name": "fr_destroyer_marceau_class_marceau", "rank": 3 },
+            { "name": "fr_cruiser_jeanne_darc", "rank": 3 }
+          ],
           [
             {
               "name": "fr_cruiser_dugauy_class_dugauy_trouin",
@@ -8065,7 +8062,11 @@
             }
           ]
         ],
-        [[{ "name": "fr_cruiser_suffren_class_colbert", "rank": 4 }], [], []],
+        [
+          [{ "name": "fr_cruiser_suffren_class_colbert", "rank": 4 }],
+          [{ "name": "fr_cruiser_emile_bertin", "rank": 4 }],
+          []
+        ],
         [
           [
             { "name": "fr_battleship_courbet_class_paris", "rank": 5 },
