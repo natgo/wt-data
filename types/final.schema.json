@@ -13,7 +13,21 @@
               "intname": { "type": "string" },
               "wikiname": { "type": "string" },
               "displayname": { "type": "string" },
-              "country": { "type": "string" },
+              "country": {
+                "type": "string",
+                "enum": [
+                  "country_usa",
+                  "country_germany",
+                  "country_ussr",
+                  "country_britain",
+                  "country_japan",
+                  "country_china",
+                  "country_italy",
+                  "country_france",
+                  "country_sweden",
+                  "country_israel"
+                ]
+              },
               "operator_country": { "type": "string" },
               "rank": { "type": "number", "maximum": 8, "minimum": 1 },
               "crew": { "type": "number" },
@@ -439,6 +453,12 @@
               "sl_multiplyer",
               "prem_type",
               "type",
+              "mass",
+              "horsepower",
+              "gears_forward",
+              "gears_backward",
+              "maxSpeedRB",
+              "maxSpeedAB",
               "optics",
               "normal_type"
             ],
@@ -875,8 +895,8 @@
                             "minItems": 2,
                             "maxItems": 2,
                             "items": [
-                              { "type": "number", "const": 1024 },
-                              { "type": "number", "const": 768 }
+                              { "type": "number", "enum": [1920, 1024] },
+                              { "type": "number", "enum": [1080, 768] }
                             ]
                           },
                           "noiseFactor": {
