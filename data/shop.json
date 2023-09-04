@@ -132,8 +132,7 @@
               "name": "us_m4_sherman_promo",
               "rank": 2,
               "reqAir": "",
-              "gift": true,
-              "hidden": true
+              "gift": true
             }
           ]
         ],
@@ -4110,13 +4109,7 @@
           ],
           [
             { "name": "su-11", "rank": 5, "reqAir": "" },
-            {
-              "name": "mig-15bis_ish",
-              "rank": 5,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            },
+            { "name": "mig-15bis_ish", "rank": 5, "reqAir": "" },
             { "name": "mig-17_cuba", "rank": 5, "reqAir": "" }
           ],
           [
@@ -6241,8 +6234,7 @@
               "name": "jp_destroyer_hatsuzuki",
               "rank": 3,
               "reqAir": "",
-              "gift": true,
-              "hidden": true
+              "gift": true
             }
           ]
         ],
