@@ -1280,7 +1280,7 @@
       "col_normal": 3,
       "min_rank": 1,
       "max_rank": 6,
-      "needVehicles": [3, 4, 4, 5, 6],
+      "needVehicles": [3, 4, 4, 5, 5],
       "range": [
         [
           [
@@ -1402,8 +1402,15 @@
         ],
         [
           [
-            { "name": "us_cruiser_fargo_class", "rank": 5 },
-            { "name": "us_cruiser_brooklyn_class_brooklyn", "rank": 5 }
+            {
+              "name": "us_cruiser_fargo_brooklyn_group",
+              "displayname": "us_cruiser_fargo_brooklyn_group",
+              "image": "us_cruiser_fargo_class",
+              "vehicles": [
+                { "name": "us_cruiser_fargo_class", "rank": 5 },
+                { "name": "us_cruiser_brooklyn_class_brooklyn", "rank": 5 }
+              ]
+            }
           ],
           [
             { "name": "us_cruiser_cleveland_class_cleveland", "rank": 5 },
@@ -6000,7 +6007,7 @@
       "col_normal": 3,
       "min_rank": 1,
       "max_rank": 6,
-      "needVehicles": [3, 5, 6, 6, 4],
+      "needVehicles": [3, 5, 5, 6, 4],
       "range": [
         [
           [
@@ -6065,13 +6072,27 @@
         ],
         [
           [
-            { "name": "uk_destroyer_battle_2series", "rank": 3 },
-            { "name": "uk_destroyer_battle_tobruk", "rank": 3 },
+            {
+              "name": "uk_destroyer_battle_group",
+              "displayname": "uk_destroyer_battle_group",
+              "image": "uk_destroyer_battle_2series",
+              "vehicles": [
+                { "name": "uk_destroyer_battle_2series", "rank": 3 },
+                { "name": "uk_destroyer_battle_tobruk", "rank": 3 }
+              ]
+            },
             { "name": "uk_cruiser_arethusa", "rank": 3 }
           ],
           [
-            { "name": "uk_destroyer_daring_class_diana", "rank": 3 },
-            { "name": "uk_destroyer_daring_class_daring", "rank": 3 }
+            {
+              "name": "uk_destroyer_daring_group",
+              "displayname": "uk_destroyer_daring_group",
+              "image": "uk_destroyer_battle_2series",
+              "vehicles": [
+                { "name": "uk_destroyer_daring_class_diana", "rank": 3 },
+                { "name": "uk_destroyer_daring_class_daring", "rank": 3 }
+              ]
+            }
           ],
           [
             { "name": "uk_cruiser_enterprise_d52", "rank": 3 },
@@ -6103,12 +6124,19 @@
           ],
           [
             { "name": "uk_cruiser_dido", "rank": 4 },
-            { "name": "uk_cruiser_york", "rank": 4 },
-            { "name": "uk_cruiser_london", "rank": 4 }
+            { "name": "uk_cruiser_york", "rank": 4 }
           ],
           [
-            { "name": "uk_cruiser_kent", "rank": 4 },
-            { "name": "uk_cruiser_norfolk", "rank": 4 }
+            {
+              "name": "uk_cruiser_kent_norfolk_group",
+              "displayname": "uk_cruiser_kent_norfolk_group",
+              "image": "uk_cruiser_kent",
+              "vehicles": [
+                { "name": "uk_cruiser_kent", "rank": 4 },
+                { "name": "uk_cruiser_norfolk", "rank": 4 }
+              ]
+            },
+            { "name": "uk_cruiser_london", "rank": 4 }
           ],
           [{ "name": "uk_cruiser_belfast", "rank": 4, "reqAir": "" }],
           [
@@ -6474,7 +6502,7 @@
           [{ "name": "jp_type_74_mod_g_kai", "rank": 6, "reqAir": "" }]
         ],
         [
-          [],
+          [{ "name": "jp_type_10_prototype", "rank": 7 }],
           [
             {
               "name": "jp_type_90_group",
@@ -6938,17 +6966,20 @@
       "col_normal": 3,
       "min_rank": 1,
       "max_rank": 6,
-      "needVehicles": [2, 3, 5, 4, 4],
+      "needVehicles": [3, 3, 5, 4, 4],
       "range": [
         [
-          [{ "name": "jp_destroyer_mutsuki", "rank": 1 }],
-          [{ "name": "jp_destroyer_fubuki", "rank": 1 }],
+          [{ "name": "jp_destroyer_momi", "rank": 1 }],
+          [
+            { "name": "jp_destroyer_mutsuki", "rank": 1 },
+            { "name": "jp_destroyer_fubuki", "rank": 1 }
+          ],
           [],
           [{ "name": "jp_destroyer_satsuki", "rank": 1, "reqAir": "" }],
           []
         ],
         [
-          [{ "name": "jp_destroyer_harukaze", "rank": 2 }],
+          [{ "name": "jp_destroyer_harukaze", "rank": 2, "reqAir": "" }],
           [
             { "name": "jp_destroyer_yugumo", "rank": 2 },
             { "name": "jp_destroyer_hatsuharu", "rank": 2 }
@@ -7363,7 +7394,7 @@
             },
             {
               "name": "cn_ptl_aft_group",
-              "displayname": "cn_ptl_aft_group",
+              "displayname": "PTL02/AFT09",
               "image": "cn_ptl_02",
               "vehicles": [
                 { "name": "cn_ptl_02", "rank": 6 },
@@ -7797,7 +7828,7 @@
             {
               "name": "it_semovente_m43_105_75_group",
               "displayname": "M43 105/75",
-              "image": "it_semovente_m43_105_75_group",
+              "image": "it_semovente_m43_group",
               "vehicles": [
                 { "name": "it_semovente_m43_105", "rank": 2 },
                 { "name": "it_semovente_m43_75_34", "rank": 2 }
@@ -8004,7 +8035,7 @@
       ]
     },
     "helicopters": {
-      "col_normal": 1,
+      "col_normal": 2,
       "min_rank": 5,
       "max_rank": 7,
       "needVehicles": [0, 0, 0, 0, 1, 1],
@@ -8013,10 +8044,16 @@
         [],
         [],
         [],
-        [[{ "name": "ab_205a_1", "rank": 5 }], []],
+        [
+          [{ "name": "ab_205a_1", "rank": 5 }],
+          [{ "name": "mi_24d_hungary", "rank": 5, "reqAir": "ab_205a_1" }],
+          []
+        ],
         [
           [{ "name": "a_109_eoa2", "rank": 6 }],
+          [{ "name": "mi_24v_hungary", "rank": 6 }],
           [
+            { "name": "mi_24p_hungary", "rank": 6, "reqAir": "", "gift": true },
             {
               "name": "a_129_a",
               "rank": 6,
@@ -8033,7 +8070,7 @@
             }
           ]
         ],
-        [[{ "name": "a_129_cbt", "rank": 7 }], []]
+        [[{ "name": "a_129_cbt", "rank": 7 }], [], []]
       ]
     },
     "aviation": {
@@ -9715,7 +9752,7 @@
           [],
           [{ "name": "hunter_f50_sweden", "rank": 6 }],
           [{ "name": "saab_j35a", "rank": 6, "reqAir": "" }],
-          []
+          [{ "name": "saab_a32a_red_adam", "rank": 6, "reqAir": "" }]
         ],
         [
           [
@@ -9795,7 +9832,7 @@
             {
               "name": "il_tiran_4_group",
               "displayname": "Tiran 4/4S",
-              "image": "il_tiran_4",
+              "image": "il_tiran_4_group",
               "vehicles": [
                 { "name": "il_tiran_4", "rank": 5 },
                 { "name": "il_tiran_4_sh", "rank": 5 }
