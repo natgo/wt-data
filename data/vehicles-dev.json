@@ -147,7 +147,11 @@
     },
     { "intname": "us_magach_3", "wikiname": "Magach 3 (ERA) (USA)" },
     { "intname": "us_t54e1", "wikiname": "T54E1" },
-    { "intname": "us_merkava_mk_1", "wikiname": "Merkava Mk.1 (USA)" },
+    {
+      "intname": "us_merkava_mk_1",
+      "wikiname": "Merkava Mk.1 (USA)",
+      "marketplace": "Merkava Mk.1 (USA)"
+    },
     {
       "intname": "us_merkava_mk_2b_late",
       "wikiname": "Merkava Mk.2B (USA)",
@@ -405,7 +409,8 @@
     { "intname": "germ_pzkpfw_V_ersatz_m10", "wikiname": "Ersatz M10" },
     {
       "intname": "germ_pzkpfw_VI_ausf_b_tiger_IIh_sla",
-      "wikiname": "Tiger II (H) Sla.16"
+      "wikiname": "Tiger II (H) Sla.16",
+      "store": "5185"
     },
     { "intname": "germ_ru251", "wikiname": "Ru 251" },
     { "intname": "germ_flakpanzer_V_Coelian", "wikiname": "Flakpanzer 341" },
@@ -805,7 +810,8 @@
     { "intname": "uk_centurion_action_x", "wikiname": "Centurion Action X" },
     {
       "intname": "uk_centurion_mk_5_avre_era",
-      "wikiname": "Centurion Mk.5 AVRE"
+      "wikiname": "Centurion Mk.5 AVRE",
+      "store": "6225"
     },
     { "intname": "uk_vijayanta", "wikiname": "Vijayanta" },
     { "intname": "uk_khalid", "wikiname": "Khalid" },
@@ -2051,7 +2057,11 @@
     { "intname": "tandem_mai", "wikiname": "Tandem MAI" },
     { "intname": "lagg-3-23", "wikiname": "LaGG-3-23" },
     { "intname": "i_29", "wikiname": "I-29", "marketplace": "I-29 (USSR)" },
-    { "intname": "il_2_m82", "wikiname": "IL-2 M-82" },
+    {
+      "intname": "il_2_m82",
+      "wikiname": "IL-2 M-82",
+      "marketplace": "items_IL-2 M-82 (USSR)"
+    },
     {
       "intname": "lagg-3-34",
       "wikiname": "LaGG-3-34",

@@ -6,7 +6,8 @@ import { vehiclRankSchema } from "./generic.schema";
 
 export type VehicleProps = GroundProps | AircraftProps | HelicopterProps | ShipProps | BoatProps;
 
-export const premTypeSchema = z.enum(["false", "event", "marketplace", "store", "gold", "squad"]);
+export const obtainFromSchema = z.enum(["marketplace", "store", "gold", "gift"]).optional();
+export type ObtainFrom = z.infer<typeof obtainFromSchema>;
 
 export const normalAircraftTypeSchema = z.enum(["type_fighter", "type_bomber", "type_assault"]);
 export const normalGroundTypeSchema = z.enum([
@@ -50,7 +51,8 @@ export const finalPropsSchema = z.object({
   base_repair: z.array(z.number()).length(3),
   rp_multiplyer: z.number(),
   sl_multiplyer: z.array(z.number()).length(3),
-  prem_type: premTypeSchema,
+  obtainFrom: obtainFromSchema,
+  squad: z.boolean().optional(),
   event: z.string().optional(),
   cost_gold: z.number().optional(),
   hidden: z.boolean().optional(),
