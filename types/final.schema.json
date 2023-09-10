@@ -33,25 +33,36 @@
               "crew": { "type": "number" },
               "sl_price": { "type": "number" },
               "reqRP": { "type": "number" },
-              "br": { "type": "array", "items": { "type": "string" } },
-              "realbr": { "type": "array", "items": { "type": "number" } },
-              "base_repair": { "type": "array", "items": { "type": "number" } },
+              "br": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "realbr": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "base_repair": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
               "rp_multiplyer": { "type": "number" },
               "sl_multiplyer": {
                 "type": "array",
-                "items": { "type": "number" }
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
               },
-              "prem_type": {
+              "obtainFrom": {
                 "type": "string",
-                "enum": [
-                  "false",
-                  "event",
-                  "marketplace",
-                  "store",
-                  "gold",
-                  "squad"
-                ]
+                "enum": ["marketplace", "store", "gold", "gift"]
               },
+              "squad": { "type": "boolean" },
               "event": { "type": "string" },
               "cost_gold": { "type": "number" },
               "hidden": { "type": "boolean" },
@@ -62,8 +73,18 @@
               "horsepower": { "type": "number" },
               "gears_forward": { "type": "number" },
               "gears_backward": { "type": "number" },
-              "maxSpeedRB": { "type": "array", "items": { "type": "number" } },
-              "maxSpeedAB": { "type": "array", "items": { "type": "number" } },
+              "maxSpeedRB": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "maxSpeedAB": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 2,
+                "maxItems": 2
+              },
               "hydro_suspension": { "type": "boolean" },
               "can_float": { "type": "boolean" },
               "has_synchro": { "type": "boolean" },
@@ -451,14 +472,7 @@
               "base_repair",
               "rp_multiplyer",
               "sl_multiplyer",
-              "prem_type",
               "type",
-              "mass",
-              "horsepower",
-              "gears_forward",
-              "gears_backward",
-              "maxSpeedRB",
-              "maxSpeedAB",
               "optics",
               "normal_type"
             ],
@@ -510,8 +524,11 @@
               "sl_multiplyer": {
                 "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
-              "prem_type": {
-                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
+              "obtainFrom": {
+                "$ref": "#/definitions/final/properties/army/items/properties/obtainFrom"
+              },
+              "squad": {
+                "$ref": "#/definitions/final/properties/army/items/properties/squad"
               },
               "event": {
                 "$ref": "#/definitions/final/properties/army/items/properties/event"
@@ -764,7 +781,6 @@
               "base_repair",
               "rp_multiplyer",
               "sl_multiplyer",
-              "prem_type",
               "type",
               "normal_type"
             ],
@@ -818,8 +834,11 @@
               "sl_multiplyer": {
                 "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
-              "prem_type": {
-                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
+              "obtainFrom": {
+                "$ref": "#/definitions/final/properties/army/items/properties/obtainFrom"
+              },
+              "squad": {
+                "$ref": "#/definitions/final/properties/army/items/properties/squad"
               },
               "event": {
                 "$ref": "#/definitions/final/properties/army/items/properties/event"
@@ -937,7 +956,6 @@
               "base_repair",
               "rp_multiplyer",
               "sl_multiplyer",
-              "prem_type",
               "type",
               "normal_type"
             ],
@@ -991,8 +1009,11 @@
               "sl_multiplyer": {
                 "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
-              "prem_type": {
-                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
+              "obtainFrom": {
+                "$ref": "#/definitions/final/properties/army/items/properties/obtainFrom"
+              },
+              "squad": {
+                "$ref": "#/definitions/final/properties/army/items/properties/squad"
               },
               "event": {
                 "$ref": "#/definitions/final/properties/army/items/properties/event"
@@ -1034,7 +1055,6 @@
               "base_repair",
               "rp_multiplyer",
               "sl_multiplyer",
-              "prem_type",
               "type",
               "normal_type"
             ],
@@ -1088,8 +1108,11 @@
               "sl_multiplyer": {
                 "$ref": "#/definitions/final/properties/army/items/properties/sl_multiplyer"
               },
-              "prem_type": {
-                "$ref": "#/definitions/final/properties/army/items/properties/prem_type"
+              "obtainFrom": {
+                "$ref": "#/definitions/final/properties/army/items/properties/obtainFrom"
+              },
+              "squad": {
+                "$ref": "#/definitions/final/properties/army/items/properties/squad"
               },
               "event": {
                 "$ref": "#/definitions/final/properties/army/items/properties/event"
@@ -1141,7 +1164,6 @@
               "base_repair",
               "rp_multiplyer",
               "sl_multiplyer",
-              "prem_type",
               "type",
               "normal_type"
             ],

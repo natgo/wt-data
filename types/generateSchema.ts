@@ -8,12 +8,13 @@ import { modificationsSchema } from "./modifications.schema";
 import { finalShopSchema } from "./shop.schema";
 import { wikiSchema } from "./wiki.schema";
 
-function writeSchema<T>(schema: ZodType<T>, name: string) {
+async function writeSchema<T>(schema: ZodType<T>, name: string) {
   fs.writeFileSync(
     `./types/${name}.schema.json`,
-    format(JSON.stringify(zodToJsonSchema(schema, name)), { parser: "json" }),
+    await format(JSON.stringify(zodToJsonSchema(schema, name)), { parser: "json" }),
   );
 }
+
 writeSchema(finalSchema, "final");
 writeSchema(modificationsSchema, "modifications");
 writeSchema(finalShopSchema, "shop");
