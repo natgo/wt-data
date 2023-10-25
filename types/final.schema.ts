@@ -191,9 +191,9 @@ export const opticIr = z.object({
     z.union([z.literal(800), z.literal(1200), z.literal(1600)]),
     z.union([z.literal(600), z.literal(800), z.literal(1200)]),
   ]),
-  lightMult: z.union([z.literal(5), z.literal(7), z.literal(8), z.literal(9)]),
-  ghosting: z.union([z.literal(0.7), z.literal(0.75), z.literal(0.6)]),
-  noiseFactor: z.literal(0.2),
+  lightMult: z.number(),
+  ghosting: z.number(),
+  noiseFactor: z.number(),
 });
 
 export const sightSchema = z.object({
@@ -204,7 +204,7 @@ export const sightSchema = z.object({
         z.union([z.literal(500), z.literal(800), z.literal(1200)]),
         z.union([z.literal(300), z.literal(600), z.literal(800)]),
       ]),
-      noiseFactor: z.union([z.literal(0.05), z.literal(0.04)]),
+      noiseFactor: z.number(),
     })
     .optional(),
 });

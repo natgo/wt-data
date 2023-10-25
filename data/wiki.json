@@ -564,6 +564,7 @@
     { "intname": "jp_type_97_chi_ha_12cm", "visibility": 75 },
     { "intname": "ussr_t_80b", "visibility": 79 },
     { "intname": "fr_amx_13_90", "visibility": 79 },
+    { "intname": "us_losat_ccv", "visibility": 72 },
     { "intname": "fr_lorraine_40t", "visibility": 109 },
     { "intname": "it_semovente_m41m_90", "visibility": 79 },
     { "intname": "ussr_zsu_57_2", "visibility": 103 },

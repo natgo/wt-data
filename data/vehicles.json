@@ -163,6 +163,11 @@
       "marketplace": "items_XM8 (USA)"
     },
     {
+      "intname": "us_losat_ccv",
+      "wikiname": "LOSAT",
+      "marketplace": "id50239_losat_usa"
+    },
+    {
       "intname": "us_ags_teledyne",
       "wikiname": "AGS",
       "marketplace": "id50163_ags_usa"
@@ -1160,6 +1165,7 @@
       "wikiname": "M43 \"G.C.Leoncello\""
     },
     { "intname": "it_44m_zrinyi_1", "wikiname": "Zrinyi I" },
+    { "intname": "it_breda_52_autocannone" },
     {
       "intname": "it_aubl_74_60_70m",
       "wikiname": "AUBL/74 HVG",
@@ -2243,6 +2249,7 @@
       "intname": "spitfire_ix_plagis",
       "wikiname": "Plagis' Spitfire LF Mk IXc"
     },
+    { "intname": "strikemaster_mk88" },
     { "intname": "meteor_fmk8_reaper", "wikiname": "Meteor F Mk.8 Reaper" },
     { "intname": "dh_110_sea_vixen", "wikiname": "Sea Vixen F.A.W. Mk.2" },
     { "intname": "harrier_gr1", "wikiname": "Harrier GR.1" },
@@ -2392,6 +2399,11 @@
     { "intname": "g8n1", "wikiname": "G8N1" },
     { "intname": "a5m4_hagiri", "wikiname": "Hagiri's A5M4" },
     { "intname": "ki-27_otsu_ep", "wikiname": "Ki-27 otsu Tachiarai" },
+    {
+      "intname": "ki_48_2_otsu",
+      "wikiname": "Ki-48-II otsu",
+      "marketplace": "id50236_ki_48_ii_otsu_japan"
+    },
     { "intname": "a7he1", "wikiname": "A7He1" },
     { "intname": "ki_44_1_ep", "wikiname": "Ki-44-I 34", "store": "9264" },
     { "intname": "ki_44_2_otsu", "wikiname": "Ki-44-II otsu" },
@@ -2502,6 +2514,11 @@
     { "intname": "j_7d", "wikiname": "J-7D", "store": "11811" },
     { "intname": "ucav_wing_loong_i", "wikiname": "Wing Loong I" },
     { "intname": "pe-2-359_china" },
+    {
+      "intname": "f_100f_china",
+      "wikiname": "F-100F (China)",
+      "marketplace": "id50238_f_100f_china"
+    },
     { "intname": "ro_44", "wikiname": "Ro.44" },
     { "intname": "re_2000_int", "wikiname": "Re.2000 serie 1" },
     { "intname": "re_2000_ga", "wikiname": "Re.2000 G.A." },
@@ -3270,6 +3287,11 @@
     { "intname": "jp_cruiser_myoko", "wikiname": "IJN Myoko" },
     { "intname": "jp_cruiser_mogami_mikuma", "wikiname": "IJN Mikuma" },
     {
+      "intname": "jp_armoredcruiser_kurama",
+      "wikiname": "IJN Kurama",
+      "marketplace": "id50237_ijn_kurama_japan"
+    },
+    {
       "intname": "jp_battlecruiser_haruna",
       "wikiname": "IJN Haruna",
       "marketplace": "id50192_ijn_haruna_japan"
@@ -3562,6 +3584,7 @@
       "marketplace": "SGB (S309) (Britain)"
     },
     { "intname": "uk_fairmile_d_5001_5029", "wikiname": "Fairmile D (5001)" },
+    { "intname": "uk_gay_class_archer" },
     { "intname": "uk_corvette_orla", "wikiname": "LÉ Orla" },
     { "intname": "uk_frigate_whitby", "wikiname": "HMS Whitby" },
     { "intname": "uk_higgins_78ft_mtb422", "wikiname": "MTB-422" },
