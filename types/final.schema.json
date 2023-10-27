@@ -115,15 +115,9 @@
                               { "type": "number", "enum": [600, 800, 1200] }
                             ]
                           },
-                          "lightMult": {
-                            "type": "number",
-                            "enum": [5, 7, 8, 9]
-                          },
-                          "ghosting": {
-                            "type": "number",
-                            "enum": [0.7, 0.75, 0.6]
-                          },
-                          "noiseFactor": { "type": "number", "const": 0.2 }
+                          "lightMult": { "type": "number" },
+                          "ghosting": { "type": "number" },
+                          "noiseFactor": { "type": "number" }
                         },
                         "required": [
                           "resolution",
@@ -145,10 +139,7 @@
                               { "type": "number", "enum": [300, 600, 800] }
                             ]
                           },
-                          "noiseFactor": {
-                            "type": "number",
-                            "enum": [0.05, 0.04]
-                          }
+                          "noiseFactor": { "type": "number" }
                         },
                         "required": ["resolution", "noiseFactor"],
                         "additionalProperties": false
