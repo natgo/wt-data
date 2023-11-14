@@ -158,7 +158,7 @@
             {
               "name": "us_m6_group",
               "displayname": "M6A1/T1E1",
-              "image": "us_m6a1",
+              "image": "us_m6_group",
               "reqAir": "",
               "vehicles": [
                 { "name": "us_m6a1", "rank": 3 },
@@ -243,7 +243,8 @@
           ],
           "drawArrow",
           [
-            { "name": "us_m56_scorpion", "rank": 4 },
+            { "name": "us_m109a1", "rank": 4 },
+            { "name": "us_m56_scorpion", "rank": 4, "reqAir": "us_m36" },
             { "name": "us_m50_ontos", "rank": 4 }
           ],
           [
@@ -314,6 +315,7 @@
               "gift": true,
               "hidden": true
             },
+            { "name": "us_t54e2", "rank": 5, "reqAir": "" },
             { "name": "us_t54e1", "rank": 5, "reqAir": "" }
           ]
         ],
@@ -453,7 +455,7 @@
               "rank": 7,
               "reqAir": "",
               "gift": true,
-              "hidden": true,
+              "marketplace": 50239,
               "event": "craft_2023_autumn"
             },
             {
@@ -555,7 +557,7 @@
         ],
         [
           [{ "name": "ah_1z", "rank": 7 }],
-          [],
+          [{ "name": "mh_60l_dap", "rank": 7 }],
           [{ "name": "ah_64d", "rank": 7 }],
           []
         ]
@@ -1198,7 +1200,10 @@
               ]
             }
           ],
-          [{ "name": "f-105d", "rank": 7 }],
+          [
+            { "name": "f-105d", "rank": 7 },
+            { "name": "f_111a", "rank": 7 }
+          ],
           [
             { "name": "f-5c", "rank": 7, "reqAir": "", "gift": true },
             { "name": "a_6e_tram", "rank": 7, "reqAir": "", "gift": true },
@@ -1381,12 +1386,6 @@
               "name": "us_cruiser_brooklyn_class_helena",
               "rank": 4,
               "reqAir": ""
-            },
-            {
-              "name": "us_cruiser_des_moines_class",
-              "rank": 4,
-              "reqAir": "",
-              "gift": true
             }
           ],
           []
@@ -1410,6 +1409,12 @@
           ],
           [{ "name": "us_cruiser_baltimore_class_pittsburgh", "rank": 5 }],
           [
+            {
+              "name": "us_cruiser_des_moines_class",
+              "rank": 5,
+              "reqAir": "",
+              "gift": true
+            },
             {
               "name": "us_battleship_arkansas",
               "rank": 5,
@@ -1914,7 +1919,14 @@
           ]
         ],
         [
-          [{ "name": "germ_le_kpz_m41", "rank": 4 }],
+          [
+            { "name": "germ_m109g", "rank": 4 },
+            {
+              "name": "germ_le_kpz_m41",
+              "rank": 4,
+              "reqAir": "germ_panzerjager_nashorn"
+            }
+          ],
           [
             { "name": "germ_pzkpfw_VI_ausf_b_tiger_IIp", "rank": 4 },
             { "name": "germ_pzkpfw_VI_ausf_b_tiger_IIh", "rank": 4 }
@@ -2937,7 +2949,10 @@
         ],
         [
           [],
-          [{ "name": "mig_29_9_12_germany", "rank": 8 }],
+          [
+            { "name": "mig_29_9_12_germany", "rank": 8 },
+            { "name": "mig_29_9_12g", "rank": 8 }
+          ],
           [{ "name": "tornado_ids_de_assta1", "rank": 8 }],
           [],
           [],
@@ -3072,7 +3087,10 @@
           []
         ],
         [
-          [{ "name": "germ_battleship_bayern", "rank": 6 }],
+          [
+            { "name": "germ_battleship_bayern", "rank": 6 },
+            { "name": "germ_battleship_sachsen", "rank": 6 }
+          ],
           [{ "name": "germ_battleship_scharnhorst", "rank": 6 }],
           [],
           []
@@ -3464,7 +3482,10 @@
               ]
             }
           ],
-          [{ "name": "ussr_zsu_37", "rank": 3 }],
+          [
+            { "name": "ussr_zsu_37", "rank": 3 },
+            { "name": "ussr_btr_152d", "rank": 3 }
+          ],
           [
             {
               "name": "ussr_bm_31_12",
@@ -3541,7 +3562,7 @@
             { "name": "ussr_2s3m", "rank": 4 }
           ],
           [
-            { "name": "ussr_btr_zd", "rank": 4 },
+            { "name": "ussr_btr_zd", "rank": 4, "reqAir": "ussr_zsu_37" },
             { "name": "ussr_m53_59", "rank": 4 }
           ],
           [
@@ -3721,7 +3742,8 @@
           ],
           [
             { "name": "ussr_it_1", "rank": 6 },
-            { "name": "ussr_9p149", "rank": 6 }
+            { "name": "ussr_9p149", "rank": 6 },
+            { "name": "ussr_object_775", "rank": 6 }
           ],
           [
             { "name": "ussr_zsu_23_4", "rank": 6 },
@@ -3781,7 +3803,7 @@
             { "name": "ussr_t_80bvm", "rank": 7 }
           ],
           [{ "name": "ussr_2s25m", "rank": 7 }],
-          [{ "name": "ussr_9p157", "rank": 7 }],
+          [{ "name": "ussr_9p157", "rank": 7, "reqAir": "ussr_9p149" }],
           [
             { "name": "ussr_zprk_2s6", "rank": 7 },
             { "name": "ussr_pantsyr_s1", "rank": 7 }
@@ -3866,7 +3888,7 @@
             { "name": "mi_24p", "rank": 6 },
             { "name": "mi_35m", "rank": 6 }
           ],
-          [],
+          [{ "name": "mi_8amtsh", "rank": 6 }],
           [{ "name": "ka_29", "rank": 6, "reqAir": "mi_24p" }],
           [{ "name": "ka_50", "rank": 6, "reqAir": "", "gift": true }]
         ],
@@ -4630,12 +4652,17 @@
       "col_normal": 2,
       "min_rank": 1,
       "max_rank": 6,
-      "needVehicles": [4, 4, 3, 3, 4],
+      "needVehicles": [5, 4, 3, 3, 4],
       "range": [
         [
           [
             { "name": "ussr_destroyer_frunze", "rank": 1 },
-            { "name": "ussr_destroyer_7_besposhchadny", "rank": 1 }
+            { "name": "ussr_destroyer_pr45", "rank": 1 },
+            {
+              "name": "ussr_destroyer_7_besposhchadny",
+              "rank": 1,
+              "reqAir": "ussr_destroyer_frunze"
+            }
           ],
           [
             {
@@ -5153,10 +5180,12 @@
           ],
           [
             { "name": "uk_fv4005", "rank": 4 },
+            { "name": "uk_m109a1", "rank": 4 },
             {
               "name": "uk_tortoise_conway_group",
               "displayname": "Tortoise/Conway",
               "image": "uk_a39_tortoise",
+              "reqAir": "uk_fv4005",
               "vehicles": [
                 { "name": "uk_a39_tortoise", "rank": 4 },
                 { "name": "uk_fv4004_conway", "rank": 4 }
@@ -5263,7 +5292,8 @@
           ],
           [
             { "name": "uk_vickers_mbt_mk_3", "rank": 6 },
-            { "name": "uk_vfm_5", "rank": 6 }
+            { "name": "uk_vickers_mk_11", "rank": 6 },
+            { "name": "uk_vfm_5", "rank": 6, "reqAir": "uk_vickers_mbt_mk_3" }
           ],
           [
             {
@@ -5816,8 +5846,7 @@
               "rank": 4,
               "reqAir": "",
               "gift": true,
-              "hidden": true,
-              "event": "battlepass_season13"
+              "hidden": true
             }
           ],
           [
@@ -6092,6 +6121,12 @@
             { "name": "uk_battlecruiser_invincible", "rank": 5 }
           ],
           [
+            {
+              "name": "uk_battleship_iron_duke",
+              "rank": 5,
+              "reqAir": "",
+              "gift": true
+            },
             {
               "name": "uk_cruiser_tiger",
               "rank": 5,
@@ -6468,7 +6503,10 @@
             }
           ],
           [{ "name": "jp_type_16", "rank": 7 }],
-          [{ "name": "jp_type_93", "rank": 7 }],
+          [
+            { "name": "jp_type_93", "rank": 7 },
+            { "name": "jp_type_81_tansam", "rank": 7 }
+          ],
           [],
           []
         ]
@@ -6663,7 +6701,7 @@
               "rank": 2,
               "reqAir": "",
               "gift": true,
-              "hidden": true,
+              "marketplace": 50236,
               "event": "craft_2023_autumn"
             },
             { "name": "a7he1", "rank": 2, "reqAir": "" },
@@ -7022,13 +7060,21 @@
           "drawArrow",
           [
             {
+              "name": "jp_battleship_yamashiro",
+              "rank": 5,
+              "reqAir": "",
+              "gift": true
+            },
+            {
               "name": "jp_armoredcruiser_kurama",
               "rank": 5,
               "reqAir": "",
               "gift": true,
-              "hidden": true,
+              "marketplace": 50237,
               "event": "craft_2023_autumn"
-            },
+            }
+          ],
+          [
             {
               "name": "jp_battlecruiser_haruna",
               "rank": 5,
@@ -7037,8 +7083,7 @@
               "marketplace": 50192,
               "event": "summer_2022"
             }
-          ],
-          []
+          ]
         ],
         [
           [{ "name": "jp_battleship_fuso", "rank": 6 }],
@@ -7268,7 +7313,8 @@
                 { "name": "cn_isu_122", "rank": 4 }
               ]
             },
-            { "name": "cn_su_100_1945", "rank": 4 }
+            { "name": "cn_su_100_1945", "rank": 4 },
+            { "name": "cn_plz_83", "rank": 4 }
           ],
           [
             {
@@ -7309,7 +7355,7 @@
             }
           ],
           [{ "name": "cn_wz_305", "rank": 5 }],
-          [{ "name": "cn_m113a1_tow", "rank": 5 }],
+          [{ "name": "cn_m113a1_tow", "rank": 5, "reqAir": "cn_su_100_1945" }],
           [
             { "name": "cn_ztz_59a", "rank": 5, "reqAir": "" },
             { "name": "cn_type_69_2a", "rank": 5, "reqAir": "" }
@@ -7671,7 +7717,7 @@
               "rank": 6,
               "reqAir": "",
               "gift": true,
-              "hidden": true,
+              "marketplace": 50238,
               "event": "craft_2023_autumn"
             }
           ]
@@ -7709,7 +7755,7 @@
         [
           [{ "name": "f_16a_block_20_mlu", "rank": 8 }],
           [{ "name": "j_8f", "rank": 8 }],
-          [],
+          [{ "name": "jh_7a", "rank": 8 }],
           [],
           [],
           []
@@ -7902,8 +7948,18 @@
             { "name": "it_sherman_vc_firefly", "rank": 4 },
             { "name": "it_m26a1_pershing", "rank": 4 }
           ],
-          [{ "name": "it_oto_r3_t20_fa", "rank": 4 }],
-          [{ "name": "it_m36b1", "rank": 4 }],
+          [
+            { "name": "it_leopard_bofors", "rank": 4 },
+            {
+              "name": "it_oto_r3_t20_fa",
+              "rank": 4,
+              "reqAir": "it_m15_42_contraereo"
+            }
+          ],
+          [
+            { "name": "it_m36b1", "rank": 4 },
+            { "name": "it_m109g", "rank": 4 }
+          ],
           [{ "name": "it_2s1", "rank": 4 }],
           [{ "name": "it_m26_ariete", "rank": 4, "reqAir": "" }],
           []
@@ -7954,7 +8010,7 @@
             { "name": "it_otobreda_sidam_25", "rank": 6 }
           ],
           [
-            { "name": "it_m113a1_tow", "rank": 6 },
+            { "name": "it_m113a1_tow", "rank": 6, "reqAir": "it_m36b1" },
             { "name": "it_vbc_pt2", "rank": 6 }
           ],
           [{ "name": "it_t_72m1", "rank": 6 }],
@@ -8040,16 +8096,16 @@
               "gift": true,
               "hidden": true
             },
-            {
-              "name": "t_129_atak",
-              "rank": 6,
-              "reqAir": "",
-              "gift": true,
-              "hidden": true
-            }
+            { "name": "t_129_atak", "rank": 6, "reqAir": "" }
           ]
         ],
-        [[{ "name": "a_129_cbt", "rank": 7 }], []]
+        [
+          [
+            { "name": "a_129_cbt", "rank": 7 },
+            { "name": "a_129_d", "rank": 7 }
+          ],
+          []
+        ]
       ]
     },
     "aviation": {
@@ -8454,7 +8510,12 @@
           [],
           []
         ],
-        [[], [{ "name": "it_battleship_caio_duilio", "rank": 6 }], [], []]
+        [
+          [{ "name": "it_battleship_conte_di_cavour", "rank": 6 }],
+          [{ "name": "it_battleship_caio_duilio", "rank": 6 }],
+          [],
+          []
+        ]
       ]
     },
     "boat": {
@@ -8534,7 +8595,7 @@
       "col_normal": 5,
       "min_rank": 1,
       "max_rank": 7,
-      "needVehicles": [6, 6, 6, 3, 5, 5],
+      "needVehicles": [6, 6, 6, 5, 5, 5],
       "range": [
         [
           [
@@ -8643,9 +8704,9 @@
         ],
         [
           [{ "name": "fr_amx_13_75", "rank": 4 }],
-          "drawArrow",
+          [{ "name": "fr_m26_pershing", "rank": 4 }],
           [{ "name": "fr_amx_m4", "rank": 4 }],
-          "drawArrow",
+          [{ "name": "fr_amx_10p", "rank": 4 }],
           [
             {
               "name": "fr_lorraine_elc_group",
@@ -8681,6 +8742,7 @@
               "name": "fr_lorraine_bat_group",
               "displayname": "Lorraine/Char",
               "image": "fr_lorraine_bat_group",
+              "reqAir": "fr_m4a4_cn_75_50",
               "vehicles": [
                 { "name": "fr_lorraine_40t", "rank": 5 },
                 { "name": "fr_bat_chat_25t", "rank": 5 }
@@ -8774,7 +8836,11 @@
             { "name": "fr_amx_40", "rank": 6 }
           ],
           [
-            { "name": "fr_amx_30_dca", "rank": 6 },
+            {
+              "name": "fr_amx_30_dca",
+              "rank": 6,
+              "reqAir": "fr_amx_13_dca_40"
+            },
             { "name": "fr_vab_santal", "rank": 6 }
           ],
           [
@@ -8852,7 +8918,14 @@
           [],
           [{ "name": "tiger_hap_france", "rank": 6, "reqAir": "" }]
         ],
-        [[{ "name": "tiger_had_france", "rank": 7 }], [], []]
+        [
+          [
+            { "name": "tiger_had_france", "rank": 7 },
+            { "name": "tiger_had_block2_france", "rank": 7 }
+          ],
+          [],
+          []
+        ]
       ]
     },
     "aviation": {
@@ -9199,10 +9272,13 @@
       "col_normal": 2,
       "min_rank": 1,
       "max_rank": 6,
-      "needVehicles": [3, 3, 3, 2, 1],
+      "needVehicles": [4, 3, 3, 2, 1],
       "range": [
         [
-          [{ "name": "fr_destroyer_bourrasque_class_bourrasque", "rank": 1 }],
+          [
+            { "name": "fr_destroyer_bourrasque_class_bourrasque", "rank": 1 },
+            { "name": "fr_destroyer_hunt_3series", "rank": 1 }
+          ],
           [
             { "name": "fr_destroyer_jaguar_class_leopard", "rank": 1 },
             { "name": "fr_destroyer_jaguar_class_chacal", "rank": 1 }
@@ -9216,7 +9292,13 @@
           ]
         ],
         [
-          [{ "name": "fr_destroyer_aigle_class_vautour", "rank": 2 }],
+          [
+            {
+              "name": "fr_destroyer_aigle_class_vautour",
+              "rank": 2,
+              "reqAir": "fr_destroyer_bourrasque_class_bourrasque"
+            }
+          ],
           [
             { "name": "fr_destroyer_aigle_class_milan", "rank": 2 },
             { "name": "fr_destroyer_marceau_class_marceau", "rank": 2 }
@@ -9271,7 +9353,7 @@
       "col_normal": 5,
       "min_rank": 1,
       "max_rank": 7,
-      "needVehicles": [6, 6, 6, 5, 5, 5],
+      "needVehicles": [6, 6, 6, 6, 5, 5],
       "range": [
         [
           [
@@ -9396,7 +9478,7 @@
           []
         ],
         [
-          "drawArrow",
+          [{ "name": "sw_pbv_501", "rank": 4 }],
           [{ "name": "sw_strv_74", "rank": 4 }],
           [{ "name": "sw_lvkv_42", "rank": 4 }],
           [{ "name": "sw_bkan_1c", "rank": 4 }],
@@ -9409,7 +9491,7 @@
         ],
         [
           [
-            { "name": "sw_ikv_91", "rank": 5 },
+            { "name": "sw_ikv_91", "rank": 5, "reqAir": "sw_pvkv_II" },
             { "name": "sw_landsverk_ush_405", "rank": 5 }
           ],
           [
@@ -9783,7 +9865,8 @@
           ],
           [
             { "name": "il_tcm_20", "rank": 4 },
-            { "name": "il_ss_11_halftrack", "rank": 4 },
+            { "name": "il_m109", "rank": 4 },
+            { "name": "il_ss_11_halftrack", "rank": 4, "reqAir": "il_tcm_20" },
             { "name": "il_zsu_57_2", "rank": 4 }
           ],
           [{ "name": "il_m_51_w", "rank": 4, "reqAir": "", "gift": true }]
