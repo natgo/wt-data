@@ -398,12 +398,12 @@ export const groundTypeSchema = z.object({
 export const groundPropsSchema = finalPropsSchema
   .extend({
     type: z.literal("army"),
-    mass: z.number().optional(),
-    horsepower: z.number().optional(),
-    gears_forward: z.number().optional(),
-    gears_backward: z.number().optional(),
-    maxSpeedRB: z.array(z.number()).length(2).optional(),
-    maxSpeedAB: z.array(z.number()).length(2).optional(),
+    mass: z.number(),
+    horsepower: z.number(),
+    gears_forward: z.number(),
+    gears_backward: z.number(),
+    maxSpeedRB: z.array(z.number()).length(2),
+    maxSpeedAB: z.array(z.number()).length(2),
     hydro_suspension: z.boolean().optional(),
     can_float: z.boolean().optional(),
     has_synchro: z.boolean().optional(),
