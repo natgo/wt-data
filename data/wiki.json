@@ -675,6 +675,7 @@
     { "intname": "ussr_t_80um2", "visibility": 79 },
     { "intname": "ussr_su_152", "visibility": 86 },
     { "intname": "il_merkava_mk_1b", "visibility": 103 },
+    { "intname": "uk_tog_2", "visibility": 119 },
     { "intname": "germ_thyssen_henschel_tam", "visibility": 84 },
     { "intname": "sw_crotale_ng", "visibility": -88 },
     { "intname": "uk_valentine_mk_9", "visibility": 78 },

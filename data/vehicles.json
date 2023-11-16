@@ -871,6 +871,7 @@
       "wikiname": "Churchill Crocodile",
       "marketplace": "id50199_churchill_crocodile_great_britain"
     },
+    { "intname": "uk_tog_2", "wikiname": "TOG II" },
     {
       "intname": "uk_a_34_comet_iron_duke",
       "wikiname": "Comet I \"Iron Duke IV\"",
@@ -3063,6 +3064,7 @@
       "wikiname": "USS Baltimore",
       "marketplace": "items_USS Baltimore (CA-68) (USA)"
     },
+    { "intname": "us_destroyer_fletcher_sub_event" },
     {
       "intname": "us_destroyer_somers_davis",
       "wikiname": "USS Davis",
@@ -3127,6 +3129,7 @@
       "wikiname": "Jaguar",
       "marketplace": "Type 1924 Jaguar (Germany)"
     },
+    { "intname": "germ_sub_type_7" },
     { "intname": "germ_destroyer_class1936c_z47", "wikiname": "Z47" },
     {
       "intname": "germ_destroyer_class1936_z20_karlgalster",
@@ -3470,6 +3473,7 @@
       "wikiname": "Thunderbolt (PT-556)"
     },
     { "intname": "us_ashville_class_douglas", "wikiname": "USS Douglas" },
+    { "intname": "us_frigate_tacoma_sub_event" },
     { "intname": "us_elco_80ft_pt109_boat", "wikiname": "PT-109" },
     { "intname": "us_higgins_78ft_pt658", "wikiname": "PT-658" },
     {
