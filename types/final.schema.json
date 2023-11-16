@@ -464,6 +464,12 @@
               "rp_multiplyer",
               "sl_multiplyer",
               "type",
+              "mass",
+              "horsepower",
+              "gears_forward",
+              "gears_backward",
+              "maxSpeedRB",
+              "maxSpeedAB",
               "optics",
               "normal_type"
             ],
