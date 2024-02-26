@@ -51,6 +51,7 @@
     { "intname": "us_m1_ip_abrams", "wikiname": "IPM1" },
     { "intname": "us_m1a2_abrams", "wikiname": "M1A2 Abrams" },
     { "intname": "us_m1a2_sep_abrams", "wikiname": "M1A2 SEP" },
+    { "intname": "us_m1a2_sep2_abrams", "wikiname": "M1A2 SEP V2" },
     { "intname": "us_halftrack_m13", "wikiname": "M13 MGMC" },
     { "intname": "us_halftrack_m15", "wikiname": "M15 CGMC" },
     { "intname": "us_halftrack_m16", "wikiname": "M16 MGMC" },
@@ -101,7 +102,7 @@
     { "intname": "us_m26e1_pershing", "wikiname": "M26E1" },
     { "intname": "us_m46_patton_73_armor_bat", "wikiname": "M46 \"Tiger\"" },
     { "intname": "us_t114", "wikiname": "T114" },
-    { "intname": "us_m728", "wikiname": "M728 CEV", "store": "11818" },
+    { "intname": "us_m728", "wikiname": "M728 CEV" },
     { "intname": "us_xm1_gm", "wikiname": "XM-1 (GM)", "store": "6226" },
     { "intname": "us_xm1_chrysler", "wikiname": "XM-1 (Chrysler)" },
     { "intname": "us_m551_football" },
@@ -109,6 +110,11 @@
     { "intname": "us_m1128_wolfpack", "wikiname": "M1128 Wolfpack" },
     { "intname": "us_m1_abrams_kvt", "wikiname": "M1 KVT", "store": "12205" },
     { "intname": "us_m1a1_aim_abrams", "wikiname": "M1A1 AIM" },
+    {
+      "intname": "us_m1a1_hc_usmc",
+      "wikiname": "M1A1 Click-Bait",
+      "store": "12930"
+    },
     { "intname": "us_lvt_a_1_trb", "wikiname": "LVT(A)(1) (TheRussianBadger)" },
     { "intname": "us_m8_greyhound", "wikiname": "M8 LAC", "marketplace": "M8" },
     {
@@ -146,6 +152,7 @@
       "wikiname": "M6A2E1",
       "marketplace": "items_M6A2E1 (USA)"
     },
+    { "intname": "us_m551_76", "wikiname": "M551(76)" },
     { "intname": "us_magach_3", "wikiname": "Magach 3 (ERA) (USA)" },
     { "intname": "us_t54e2", "wikiname": "T54E2" },
     { "intname": "us_t54e1", "wikiname": "T54E1" },
@@ -259,6 +266,7 @@
     { "intname": "germ_leopard_2a5", "wikiname": "Leopard 2A5" },
     { "intname": "germ_leopard_2a6", "wikiname": "Leopard 2A6" },
     { "intname": "germ_leopard_2a5_pso", "wikiname": "Leopard 2 PSO" },
+    { "intname": "germ_leopard_2a7v", "wikiname": "Leopard 2A7V" },
     { "intname": "germ_flakpanzer_I_ausf_A", "wikiname": "Flakpanzer I" },
     { "intname": "germ_flakpanzer_38t_Gepard", "wikiname": "Flakpanzer 38" },
     { "intname": "germ_sdkfz_222", "wikiname": "Sd.Kfz.222" },
@@ -364,6 +372,11 @@
       "wikiname": "Leopard 2 (PzBtl 123)",
       "store": "11228"
     },
+    {
+      "intname": "germ_vilkas",
+      "wikiname": "Vilkas",
+      "marketplace": "id50248_vilkas_germany"
+    },
     { "intname": "germ_leopard_2pl", "wikiname": "Leopard 2 PL" },
     {
       "intname": "germ_leopard_2a5_yt_cup_2019",
@@ -422,7 +435,11 @@
     },
     { "intname": "germ_ru251", "wikiname": "Ru 251" },
     { "intname": "germ_flakpanzer_V_Coelian", "wikiname": "Flakpanzer 341" },
-    { "intname": "germ_spz_12_3", "wikiname": "SPz 12-3 LGS" },
+    {
+      "intname": "germ_spz_12_3",
+      "wikiname": "SPz 12-3 LGS",
+      "marketplace": "id50228_spz_12_3_lgs_germany"
+    },
     {
       "intname": "germ_pzkpfw_VI_ausf_b_tiger_IIh_kwk46",
       "wikiname": "Tiger II (10.5 cm Kw.K)"
@@ -483,6 +500,7 @@
     { "intname": "ussr_t_72b_1989", "wikiname": "T-72B (1989)" },
     { "intname": "ussr_t_90a", "wikiname": "T-90A" },
     { "intname": "ussr_t_72b3_2011", "wikiname": "T-72B3" },
+    { "intname": "ussr_t_90m_2020", "wikiname": "T-90M" },
     { "intname": "ussr_t_26_1940", "wikiname": "T-26" },
     { "intname": "ussr_t_28_1938", "wikiname": "T-28 (1938)" },
     { "intname": "ussr_t_28", "wikiname": "T-28" },
@@ -565,7 +583,6 @@
     { "intname": "ussr_t_35", "wikiname": "T-35" },
     { "intname": "ussr_su_57", "wikiname": "SU-57" },
     { "intname": "ussr_pzkpfw_III_ausf_J_L42", "wikiname": "T-III (USSR)" },
-    { "intname": "ussr_bm_8_24", "wikiname": "BM-8-24" },
     { "intname": "ussr_t_126sp", "wikiname": "T-126", "store": "8167" },
     { "intname": "ussr_zut_37", "wikiname": "ZUT-37" },
     { "intname": "ussr_smk", "wikiname": "SMK" },
@@ -582,40 +599,47 @@
     { "intname": "ussr_t_34_1940_l_11", "wikiname": "T-34 (Prototype)" },
     { "intname": "ussr_bm_31_12", "wikiname": "BM-31-12" },
     { "intname": "ussr_t_34_57_1943", "wikiname": "T-34-57 (1943)" },
-    { "intname": "ussr_su_100Y", "wikiname": "SU-100Y" },
     { "intname": "ussr_m4a2_76w_sherman", "wikiname": "M4A2 (USSR)" },
+    { "intname": "ussr_type_65_aa", "wikiname": "Phòng không T-34 (USSR)" },
+    { "intname": "ussr_kv_122", "wikiname": "KV-122" },
     { "intname": "ussr_t_34_85E", "wikiname": "T-34-85E" },
     { "intname": "ussr_su_122P", "wikiname": "SU-122P" },
     { "intname": "ussr_t_44_122", "wikiname": "T-44-122" },
     { "intname": "ussr_t_34_100", "wikiname": "T-34-100" },
+    { "intname": "ussr_is_6", "wikiname": "IS-6", "store": "5560" },
     { "intname": "ussr_object_120", "wikiname": "Object 120", "store": "5731" },
     { "intname": "ussr_to_55", "wikiname": "TO-55" },
     { "intname": "ussr_t_55_am", "wikiname": "T-55AM-1", "store": "6385" },
+    {
+      "intname": "ussr_bmd_4",
+      "wikiname": "BMD-4",
+      "marketplace": "id50148_bmd_4_ussr"
+    },
+    { "intname": "ussr_bmp_2m", "wikiname": "BMP-2M" },
+    { "intname": "ussr_2s38", "wikiname": "2S38" },
     {
       "intname": "ussr_t_72av_turms",
       "wikiname": "T-72AV (TURMS-T)",
       "store": "9584"
     },
-    { "intname": "ussr_2s38", "wikiname": "2S38" },
-    { "intname": "ussr_bmp_2m", "wikiname": "BMP-2M" },
     {
-      "intname": "ussr_t_80um2",
-      "wikiname": "T-80UM2",
-      "marketplace": "id50206_t_80um2_ussr"
+      "intname": "ussr_object_292",
+      "wikiname": "Object 292",
+      "marketplace": "id50257_object_292_ussr"
     },
-    { "intname": "ussr_t_80uk", "wikiname": "T-80UK" },
     {
       "intname": "ussr_t_26E",
       "wikiname": "T-26E",
       "marketplace": "T-26E (USSR)"
     },
-    { "intname": "ussr_bt_7_1937_td", "wikiname": "BT-7 TD" },
     { "intname": "ussr_rbt_5", "wikiname": "RBT-5", "marketplace": "RBT-5" },
     {
       "intname": "ussr_ba_11",
       "wikiname": "BA-11",
       "marketplace": "BA-11 (USSR)"
     },
+    { "intname": "ussr_bm_8_24", "wikiname": "BM-8-24" },
+    { "intname": "ussr_bt_7_1937_td", "wikiname": "BT-7 TD" },
     {
       "intname": "ussr_m3c",
       "wikiname": "M3 Medium (USSR)",
@@ -656,9 +680,8 @@
       "marketplace": "KV-2 (1940) (USSR)"
     },
     { "intname": "ussr_kv_1e", "wikiname": "KV-1E" },
+    { "intname": "ussr_su_100Y", "wikiname": "SU-100Y" },
     { "intname": "ussr_kv_2_zis_6", "wikiname": "KV-2 (ZiS-6)" },
-    { "intname": "ussr_type_65_aa", "wikiname": "Phòng không T-34 (USSR)" },
-    { "intname": "ussr_kv_122", "wikiname": "KV-122" },
     { "intname": "ussr_kv_220", "wikiname": "KV-220", "marketplace": "KV-220" },
     {
       "intname": "ussr_pzkpfw_V",
@@ -676,7 +699,6 @@
       "wikiname": "Type 62 (USSR)",
       "marketplace": "Type-62"
     },
-    { "intname": "ussr_is_6", "wikiname": "IS-6", "store": "5560" },
     {
       "intname": "ussr_t_10a",
       "wikiname": "T-10A",
@@ -693,11 +715,6 @@
       "wikiname": "Object 279",
       "marketplace": "Object 279 (USSR)"
     },
-    {
-      "intname": "ussr_bmd_4",
-      "wikiname": "BMD-4",
-      "marketplace": "id50148_bmd_4_ussr"
-    },
     { "intname": "ussr_m551_football" },
     {
       "intname": "ussr_t_72m2_moderna",
@@ -705,6 +722,12 @@
       "marketplace": "id50176_t_72m2_moderna_ussr"
     },
     { "intname": "ussr_t_80u_yt_cup_2019", "wikiname": "T-80U (YouTube Cup)" },
+    {
+      "intname": "ussr_t_80um2",
+      "wikiname": "T-80UM2",
+      "marketplace": "id50206_t_80um2_ussr"
+    },
+    { "intname": "ussr_t_80uk", "wikiname": "T-80UK" },
     { "intname": "ussr_t_80u_race" },
     { "intname": "uk_a_13_mk1", "wikiname": "A13 Mk I" },
     { "intname": "uk_a_13_mk2", "wikiname": "A13 Mk II" },
@@ -734,6 +757,7 @@
     { "intname": "uk_challenger_2_tes", "wikiname": "Challenger 2 TES" },
     { "intname": "uk_challenger_2_bn", "wikiname": "Black Night" },
     { "intname": "uk_challenger_2e", "wikiname": "Challenger 2E" },
+    { "intname": "uk_challenger_2_lep", "wikiname": "Challenger 3 TD" },
     { "intname": "uk_m3_stuart", "wikiname": "Stuart I" },
     { "intname": "uk_m3a1_stuart", "wikiname": "Stuart III" },
     { "intname": "uk_valentine_mk_1", "wikiname": "Valentine I" },
@@ -816,14 +840,18 @@
     },
     { "intname": "uk_ac4_thunderbolt", "wikiname": "A.C.IV" },
     {
+      "intname": "uk_a_34_comet_iron_duke",
+      "wikiname": "Comet I \"Iron Duke IV\"",
+      "marketplace": "A34 Comet I Iron Duke IV (Britain)"
+    },
+    {
       "intname": "uk_centurion_mk_3_ss11",
       "wikiname": "Strv 81 (RB 52) (Great Britain)"
     },
     { "intname": "uk_centurion_action_x", "wikiname": "Centurion Action X" },
     {
       "intname": "uk_centurion_mk_5_avre_era",
-      "wikiname": "Centurion Mk.5 AVRE",
-      "store": "6225"
+      "wikiname": "Centurion Mk.5 AVRE"
     },
     { "intname": "uk_vijayanta", "wikiname": "Vijayanta" },
     { "intname": "uk_khalid", "wikiname": "Khalid" },
@@ -836,6 +864,7 @@
       "intname": "uk_challenger_II_yt_cup_2019",
       "wikiname": "Challenger 2 (YouTube Cup)"
     },
+    { "intname": "uk_challenger_2_megatron", "wikiname": "Challenger 2 OES" },
     {
       "intname": "uk_alecto_mk_1",
       "wikiname": "Alecto I",
@@ -872,11 +901,6 @@
       "marketplace": "id50199_churchill_crocodile_great_britain"
     },
     { "intname": "uk_tog_2", "wikiname": "TOG II" },
-    {
-      "intname": "uk_a_34_comet_iron_duke",
-      "wikiname": "Comet I \"Iron Duke IV\"",
-      "marketplace": "A34 Comet I Iron Duke IV (Britain)"
-    },
     {
       "intname": "uk_ram_90mm_aa",
       "wikiname": "QF 3.7 Ram",
@@ -929,7 +953,7 @@
     { "intname": "jp_type_61", "wikiname": "Type 61" },
     { "intname": "jp_st_a3", "wikiname": "ST-A3" },
     { "intname": "jp_m47_patton_II", "wikiname": "M47 (Japan)" },
-    { "intname": "jp_st_b1", "wikiname": "STB-1" },
+    { "intname": "jp_st_b1", "wikiname": "STB-2" },
     { "intname": "jp_type_74_c", "wikiname": "Type 74 (C)" },
     { "intname": "jp_type_74", "wikiname": "Type 74 (E)" },
     { "intname": "jp_type_74_f", "wikiname": "Type 74 (F)" },
@@ -945,6 +969,7 @@
     { "intname": "jp_type_5_na_to", "wikiname": "Na-To" },
     { "intname": "jp_m36b2_jgsdf", "wikiname": "M36 (Japan)" },
     { "intname": "jp_type_75", "wikiname": "Type 75 SPH" },
+    { "intname": "jp_type_99", "wikiname": "Type 99" },
     { "intname": "jp_type_5_ho_ri_production", "wikiname": "Ho-Ri Production" },
     { "intname": "jp_type_16_mcv_prot", "wikiname": "Type 16 (P)" },
     { "intname": "jp_type_16", "wikiname": "Type 16" },
@@ -998,6 +1023,7 @@
     { "intname": "cn_cm11", "wikiname": "CM11" },
     { "intname": "cn_mbt2000", "wikiname": "MBT2000" },
     { "intname": "cn_wz_1001", "wikiname": "WZ1001(E) LCT" },
+    { "intname": "cn_vt_4b", "wikiname": "VT-4A1" },
     { "intname": "cn_t_26_1940", "wikiname": "T-26 (China)" },
     { "intname": "cn_type_97_chi_ha", "wikiname": "Chi-Ha (China)" },
     { "intname": "cn_type_97_kai", "wikiname": "Chi-Ha Kai (China)" },
@@ -1165,6 +1191,7 @@
     { "intname": "it_sahariano", "wikiname": "Celere Sahariano" },
     { "intname": "it_sherman_75_37", "wikiname": "M4 Hybrid (Italy)" },
     { "intname": "it_pzkpfw_IV_ausf_G", "wikiname": "Pz.IV G (Italy)" },
+    { "intname": "it_pzkpfw_VI_ausf_e_tiger", "wikiname": "Tigris" },
     { "intname": "it_m26_ariete", "wikiname": "M26 \"D.C.Ariete\"" },
     { "intname": "it_m60a1_ariete", "wikiname": "M60A1 \"D.C.Ariete\"" },
     { "intname": "it_of_40_mtca", "wikiname": "OF-40 (MTCA)" },
@@ -1177,7 +1204,11 @@
       "wikiname": "M43 \"G.C.Leoncello\""
     },
     { "intname": "it_44m_zrinyi_1", "wikiname": "Zrinyi I" },
-    { "intname": "it_breda_52_autocannone", "wikiname": "Breda 90/53" },
+    {
+      "intname": "it_breda_52_autocannone",
+      "wikiname": "Breda 90/53",
+      "marketplace": "id50242_breda_90_53_italy"
+    },
     {
       "intname": "it_aubl_74_60_70m",
       "wikiname": "AUBL/74 HVG",
@@ -1229,6 +1260,7 @@
     { "intname": "fr_citroen_kegresse_p4t", "wikiname": "P.7.T AA" },
     { "intname": "fr_cckw_353_bofors", "wikiname": "CCKW 353 AA" },
     { "intname": "fr_amx_13_dca_40", "wikiname": "AMX-13 DCA 40" },
+    { "intname": "fr_tpk_641_vpc", "wikiname": "TPK 6.41" },
     { "intname": "fr_amx_10p", "wikiname": "AMX-10P" },
     { "intname": "fr_amx_30_dca", "wikiname": "AMX-30 DCA" },
     { "intname": "fr_vab_santal", "wikiname": "SANTAL" },
@@ -1263,11 +1295,7 @@
     { "intname": "fr_amx_13_75_ss11", "wikiname": "AMX-13 (SS.11)" },
     { "intname": "fr_somua_sm", "wikiname": "Somua SM", "store": "9313" },
     { "intname": "fr_amx_30", "wikiname": "AMX-30" },
-    {
-      "intname": "fr_amx_30_super",
-      "wikiname": "AMX-30 Super",
-      "store": "6881"
-    },
+    { "intname": "fr_amx_30_super", "wikiname": "AMX-30 Super" },
     { "intname": "fr_vbci2_mct30", "wikiname": "VBCI-2 (MCT30)" },
     {
       "intname": "fr_amd_35_sa35",
@@ -1321,6 +1349,7 @@
     { "intname": "sw_strv_121", "wikiname": "Strv 121" },
     { "intname": "sw_strv_122", "wikiname": "Strv 122A" },
     { "intname": "sw_strv_122b_plss", "wikiname": "Strv 122B PLSS" },
+    { "intname": "sw_strv_122b_plus", "wikiname": "Strv 122B+" },
     { "intname": "sw_pvlvv_fm42", "wikiname": "Pvlvv fm/42" },
     { "intname": "sw_pbv_301", "wikiname": "Pbv 301" },
     { "intname": "sw_tgdgb_m40_lv", "wikiname": "Lvtdgb m/40" },
@@ -1382,7 +1411,7 @@
       "marketplace": "id50150_pbil_m_40_sweden"
     },
     { "intname": "sw_ikv_73", "wikiname": "Ikv 73" },
-    { "intname": "sw_k9_vidar", "wikiname": "VIDAR" },
+    { "intname": "sw_k9_vidar", "wikiname": "VIDAR", "store": "12781" },
     {
       "intname": "sw_patria_amv_ctcv_105",
       "wikiname": "CT-CV 105HP",
@@ -1417,13 +1446,15 @@
     { "intname": "il_merkava_mk_4_lic", "wikiname": "Merkava Mk.4 LIC" },
     { "intname": "il_merkava_mk_4m", "wikiname": "Merkava Mk.4M" },
     { "intname": "il_tcm_20", "wikiname": "TCM-20" },
-    { "intname": "il_m109", "wikiname": "M109 (Israel)" },
-    { "intname": "il_ss_11_halftrack", "wikiname": "Zachlam Tager" },
     { "intname": "il_zsu_57_2", "wikiname": "ZSU-57-2 (Israel)" },
     { "intname": "il_m163_vulcan", "wikiname": "Hovet" },
     { "intname": "il_zsu_23_4", "wikiname": "ZSU-23-4 (Israel)" },
     { "intname": "il_machbet", "wikiname": "Machbet" },
     { "intname": "il_mim_72_chaparral", "wikiname": "Imp.Chaparral (Israel)" },
+    { "intname": "il_m109", "wikiname": "M109 (Israel)" },
+    { "intname": "il_m109a1", "wikiname": "Rochev" },
+    { "intname": "il_ss_11_halftrack", "wikiname": "Zachlam Tager" },
+    { "intname": "il_m113a1_tow", "wikiname": "Giraf" },
     { "intname": "il_m_51_w", "wikiname": "M-51 (W)", "store": "10705" },
     { "intname": "il_magach_3", "wikiname": "Magach 3 (ERA)" },
     { "intname": "il_centurion_shot_kal_d", "wikiname": "Sho't Kal Dalet" },
@@ -1479,6 +1510,7 @@
     { "intname": "f-100d", "wikiname": "F-100D" },
     { "intname": "f-4c", "wikiname": "F-4C Phantom II" },
     { "intname": "f-4e", "wikiname": "F-4E Phantom II" },
+    { "intname": "f_15a", "wikiname": "F-15A" },
     { "intname": "bf2c_1", "wikiname": "BF2C-1" },
     { "intname": "f3f-2", "wikiname": "F3F-2" },
     { "intname": "f2a-1", "wikiname": "F2A-1" },
@@ -1839,7 +1871,7 @@
     },
     {
       "intname": "tornado_ids_de_mfg",
-      "wikiname": "Tornado IDS (Germany)",
+      "wikiname": "Tornado IDS MFG (Germany)",
       "marketplace": "id50204_%E2%97%84tornado_ids_germany"
     },
     {
@@ -1906,6 +1938,11 @@
       "intname": "me-262a-2a",
       "wikiname": "Me 262 A-2a",
       "marketplace": "Me.262A-2a Sturmvogel"
+    },
+    {
+      "intname": "tornado_ids_de_wtd61",
+      "wikiname": "Tornado IDS WTD61 (Germany)",
+      "store": "13035"
     },
     {
       "intname": "mig_23mf_germany",
@@ -1978,6 +2015,7 @@
     { "intname": "su-7bkl", "wikiname": "Su-7BKL" },
     { "intname": "su_17m2", "wikiname": "Su-17M2" },
     { "intname": "su_17m4", "wikiname": "Su-17M4" },
+    { "intname": "su_27", "wikiname": "Su-27" },
     { "intname": "po-2", "wikiname": "Po-2" },
     { "intname": "po-2_nw", "wikiname": "Po-2 Night Witch" },
     { "intname": "bb-1", "wikiname": "BB-1" },
@@ -2105,6 +2143,7 @@
     { "intname": "il-2m_mstitel", "wikiname": "IL-2M \"Avenger\"" },
     { "intname": "yak-9m", "wikiname": "Golovachev's Yak-9M" },
     { "intname": "pe-2-205", "wikiname": "Pe-2-205" },
+    { "intname": "il_8_1944", "wikiname": "IL-8 (1944)" },
     { "intname": "tu-2_early", "wikiname": "Tu-2" },
     {
       "intname": "itp_m1",
@@ -2151,6 +2190,7 @@
     { "intname": "hunter_f1", "wikiname": "Hunter F.1" },
     { "intname": "hunter_f6", "wikiname": "Hunter F.6" },
     { "intname": "f-4m_fgr2", "wikiname": "Phantom FGR.2" },
+    { "intname": "saab_jas39c_south_africa", "wikiname": "JAS39C" },
     { "intname": "gladiator_mk2_france", "wikiname": "Gladiator Mk IIF" },
     { "intname": "gladiator_mk2_silver", "wikiname": "Gladiator Mk IIS" },
     { "intname": "gladiator_mk2", "wikiname": "Gladiator Mk II" },
@@ -2267,11 +2307,16 @@
       "intname": "spitfire_ix_plagis",
       "wikiname": "Plagis' Spitfire LF Mk IXc"
     },
-    { "intname": "strikemaster_mk88", "wikiname": "Strikemaster Mk.88" },
+    {
+      "intname": "strikemaster_mk88",
+      "wikiname": "Strikemaster Mk.88",
+      "marketplace": "id50244_strikemaster_mk_88_great_britain"
+    },
     { "intname": "meteor_fmk8_reaper", "wikiname": "Meteor F Mk.8 Reaper" },
     { "intname": "dh_110_sea_vixen", "wikiname": "Sea Vixen F.A.W. Mk.2" },
     { "intname": "harrier_gr1", "wikiname": "Harrier GR.1" },
     { "intname": "lightning_f53", "wikiname": "Lightning F.53" },
+    { "intname": "jaguar_is" },
     { "intname": "f-4jk", "wikiname": "F-4J(UK) Phantom II", "store": "11808" },
     { "intname": "swordfish_mk2", "wikiname": "Swordfish Mk II" },
     { "intname": "pby-5a_raf", "wikiname": "Catalina Mk IIIa (Great Britain)" },
@@ -2352,6 +2397,7 @@
     { "intname": "f-104j", "wikiname": "F-104J" },
     { "intname": "f-4ej", "wikiname": "F-4EJ Phantom II" },
     { "intname": "f-4ej_kai", "wikiname": "F-4EJ Kai Phantom II" },
+    { "intname": "f_15j", "wikiname": "F-15J" },
     { "intname": "ki_10_1", "wikiname": "Ki-10-I" },
     { "intname": "ki_10_2", "wikiname": "Ki-10-II" },
     { "intname": "ki_10_1_commander", "wikiname": "Ki-10-I C" },
@@ -2451,7 +2497,11 @@
     { "intname": "bf-109e-3_japan", "wikiname": "Bf 109 E-7 (Japan)" },
     { "intname": "h8k3", "wikiname": "H8K3" },
     { "intname": "p-51c-11-nt_japan", "wikiname": "P-51C-11-NT (Japan)" },
-    { "intname": "b7a2_homare_23", "wikiname": "B7A2 (Homare 23)" },
+    {
+      "intname": "b7a2_homare_23",
+      "wikiname": "B7A2 (Homare 23)",
+      "marketplace": "id50226_b7a2_homare_23_japan"
+    },
     {
       "intname": "a6m6c",
       "wikiname": "A6M6c",
@@ -2499,6 +2549,7 @@
     { "intname": "j_7e", "wikiname": "J-7E" },
     { "intname": "j_8b", "wikiname": "J-8B" },
     { "intname": "j_8f", "wikiname": "J-8F" },
+    { "intname": "j_11", "wikiname": "J-11" },
     { "intname": "hs-123a-1_china", "wikiname": "Hs 123 A-1 (China)" },
     { "intname": "v_11g", "wikiname": "V-11" },
     { "intname": "v_12d", "wikiname": "V-12D" },
@@ -2574,6 +2625,7 @@
     { "intname": "sagittario_2", "wikiname": "Sagittario 2" },
     { "intname": "fiat_g91_y", "wikiname": "G.91 Y" },
     { "intname": "fiat_g91_ys", "wikiname": "G.91 YS" },
+    { "intname": "amx", "wikiname": "AMX" },
     { "intname": "tornado_adv", "wikiname": "Tornado ADV" },
     { "intname": "ba_65_k14_l", "wikiname": "Ba.65 (K.14) L" },
     { "intname": "ju-87r-2_italy", "wikiname": "Ju 87 R-2 (Italy)" },
@@ -2688,6 +2740,7 @@
     },
     { "intname": "f-86k_late", "wikiname": "F-86K (France)" },
     { "intname": "f-8e_fn", "wikiname": "F-8E(FN) (France)" },
+    { "intname": "mirage_4000", "wikiname": "Mirage 4000" },
     { "intname": "v_156_f", "wikiname": "V-156-F" },
     { "intname": "br_693_ab2", "wikiname": "Br.693AB2" },
     { "intname": "a-35b", "wikiname": "A-35B (France)" },
@@ -2741,6 +2794,11 @@
       "wikiname": "Mirage F1C-200",
       "store": "11810"
     },
+    {
+      "intname": "mirage_2000c_s4",
+      "wikiname": "Mirage 2000C-S4",
+      "marketplace": "id50246_mirage_2000c_s4_france"
+    },
     { "intname": "late_298d", "wikiname": "Late 298D" },
     { "intname": "pby-5a_late_france", "wikiname": "PBY-5A Late (France)" },
     { "intname": "gl_832", "wikiname": "GL.832HY" },
@@ -2786,6 +2844,7 @@
     { "intname": "saab_j35d", "wikiname": "J35D" },
     { "intname": "saab_ja37", "wikiname": "JA37C" },
     { "intname": "saab_ja37d", "wikiname": "JA37D" },
+    { "intname": "saab_jas39a", "wikiname": "JAS39A" },
     { "intname": "saab_b17bs", "wikiname": "S17BS" },
     { "intname": "saab_b17b", "wikiname": "B17B" },
     { "intname": "saab_b17a", "wikiname": "B17A" },
@@ -2843,10 +2902,11 @@
     { "intname": "bf-109g-6_finland", "wikiname": "Bf 109 G-6 (Sweden)" },
     { "intname": "saab_105oe", "wikiname": "SAAB-105OE" },
     { "intname": "saab_j29d", "wikiname": "J29D" },
+    { "intname": "saab_a32a_red_adam", "wikiname": "A32A Röd Adam" },
     { "intname": "saab_j35a", "wikiname": "J35A" },
     { "intname": "saab_j35xs", "wikiname": "Saab J35XS", "store": "11813" },
+    { "intname": "j9_early", "wikiname": "J9 Early" },
     { "intname": "vl_myrsky_2_late", "wikiname": "VL Myrsky II" },
-    { "intname": "saab_a32a_red_adam", "wikiname": "A32A Röd Adam" },
     { "intname": "spitfire_mk9c_iaf", "wikiname": "Spitfire Mk IXc (Israel)" },
     {
       "intname": "spitfire_lf_mk9e_iaf",
@@ -2871,6 +2931,7 @@
     { "intname": "a_4n", "wikiname": "Ayit" },
     { "intname": "f-4e_iaf", "wikiname": "Kurnass" },
     { "intname": "f-4e_kurnass_2000", "wikiname": "Kurnass 2000" },
+    { "intname": "f_15a_iaf", "wikiname": "Baz" },
     { "intname": "b-17g_iaf", "wikiname": "B-17G (Israel)" },
     {
       "intname": "so_4050_vautour_2a_israel_iaf",
@@ -2940,11 +3001,7 @@
     { "intname": "lynx_ah_mk1", "wikiname": "Lynx AH.Mk.1" },
     { "intname": "ah_mk1", "wikiname": "AH Mk.1 Apache" },
     { "intname": "g_lynx", "wikiname": "G-LYNX" },
-    {
-      "intname": "ah_2_rooivalk",
-      "wikiname": "Rooivalk Mk1F CSH",
-      "store": "11446"
-    },
+    { "intname": "ah_2_rooivalk", "wikiname": "Rooivalk Mk1F CSH" },
     { "intname": "uh_1b_japan", "wikiname": "UH-1B (Japan)" },
     { "intname": "ah_1s_early", "wikiname": "AH-1E (Japan)" },
     { "intname": "ah_1s_late", "wikiname": "AH-1S" },
@@ -3009,6 +3066,10 @@
       "intname": "us_cruiser_brooklyn_class_brooklyn",
       "wikiname": "USS Brooklyn"
     },
+    {
+      "intname": "us_cruiser_worcester_class_roanoke",
+      "wikiname": "USS Roanoke"
+    },
     { "intname": "us_battleship_texas", "wikiname": "USS Texas" },
     { "intname": "us_battleship_arizona_1931", "wikiname": "USS Arizona" },
     { "intname": "us_destroyer_clemson_barker", "wikiname": "USS Barker" },
@@ -3053,18 +3114,18 @@
     { "intname": "us_destroyer_porter_1942", "wikiname": "USS Moffett" },
     { "intname": "us_destroyer_fletcher_bennion", "wikiname": "USS Bennion" },
     { "intname": "us_cruiser_brooklyn_class_helena", "wikiname": "USS Helena" },
-    {
-      "intname": "us_cruiser_des_moines_class",
-      "wikiname": "USS Des Moines",
-      "store": "12049"
-    },
+    { "intname": "us_cruiser_des_moines_class", "wikiname": "USS Des Moines" },
     { "intname": "us_battleship_arkansas", "wikiname": "USS Arkansas" },
     {
       "intname": "us_cruiser_baltimore_class",
       "wikiname": "USS Baltimore",
       "marketplace": "items_USS Baltimore (CA-68) (USA)"
     },
-    { "intname": "us_destroyer_fletcher_sub_event" },
+    {
+      "intname": "us_battleship_mississippi",
+      "wikiname": "USS Mississippi",
+      "marketplace": "id50250_uss_mississippi_usa"
+    },
     {
       "intname": "us_destroyer_somers_davis",
       "wikiname": "USS Davis",
@@ -3129,7 +3190,6 @@
       "wikiname": "Jaguar",
       "marketplace": "Type 1924 Jaguar (Germany)"
     },
-    { "intname": "germ_sub_type_7" },
     { "intname": "germ_destroyer_class1936c_z47", "wikiname": "Z47" },
     {
       "intname": "germ_destroyer_class1936_z20_karlgalster",
@@ -3167,6 +3227,7 @@
       "intname": "ussr_battleship_parizhskaya_kommuna",
       "wikiname": "Parizhskaya Kommuna"
     },
+    { "intname": "ussr_battleship_novorossiysk", "wikiname": "Novorossiysk" },
     {
       "intname": "ussr_destroyer_regele_ferdinand_class_letuchiy",
       "wikiname": "Letuchiy"
@@ -3226,6 +3287,7 @@
     { "intname": "uk_cruiser_leander", "wikiname": "HMNZS Leander" },
     { "intname": "uk_cruiser_southampton", "wikiname": "HMS Southampton" },
     { "intname": "uk_battleship_dreadnought", "wikiname": "HMS Dreadnought" },
+    { "intname": "uk_battleship_orion", "wikiname": "HMS Orion" },
     { "intname": "uk_battleship_marlborough", "wikiname": "HMS Marlborough" },
     { "intname": "uk_destroyer_g_grafton", "wikiname": "HMS Grafton" },
     { "intname": "uk_destroyer_hunt_4series", "wikiname": "HMS Brissenden" },
@@ -3253,7 +3315,11 @@
     { "intname": "uk_destroyer_j_class", "wikiname": "HMS Jervis" },
     { "intname": "uk_destroyer_haida", "wikiname": "HMCS Haida" },
     { "intname": "uk_cruiser_belfast", "wikiname": "HMS Belfast" },
-    { "intname": "uk_battleship_iron_duke", "wikiname": "HMS Iron Duke" },
+    {
+      "intname": "uk_battleship_iron_duke",
+      "wikiname": "HMS Iron Duke",
+      "store": "12861"
+    },
     {
       "intname": "uk_cruiser_tiger",
       "wikiname": "HMS Tiger",
@@ -3314,7 +3380,11 @@
     { "intname": "jp_destroyer_shimakaze", "wikiname": "IJN Shimakaze" },
     { "intname": "jp_cruiser_myoko", "wikiname": "IJN Myoko" },
     { "intname": "jp_cruiser_mogami_mikuma", "wikiname": "IJN Mikuma" },
-    { "intname": "jp_battleship_yamashiro", "wikiname": "IJN Yamashiro" },
+    {
+      "intname": "jp_battleship_yamashiro",
+      "wikiname": "IJN Yamashiro",
+      "store": "12859"
+    },
     {
       "intname": "jp_armoredcruiser_kurama",
       "wikiname": "IJN Kurama",
@@ -3393,6 +3463,10 @@
     { "intname": "it_destroyer_fletcher_geniere", "wikiname": "Geniere" },
     { "intname": "it_destroyer_leone_class_tigre", "wikiname": "RN Tigre" },
     { "intname": "it_cruiser_zara_class_pola", "wikiname": "RN Pola" },
+    {
+      "intname": "it_battleship_leonardo_da_vinci",
+      "wikiname": "RN Leonardo da Vinci"
+    },
     { "intname": "it_destroyer_soldati_serie1", "wikiname": "RN Aviere" },
     {
       "intname": "it_destroyer_soldati_serie1_geniere",
@@ -3404,6 +3478,10 @@
     },
     { "intname": "fr_destroyer_hunt_3series", "wikiname": "La Combattante" },
     { "intname": "fr_destroyer_aigle_class_vautour", "wikiname": "Vautour" },
+    {
+      "intname": "fr_destroyer_vauquelin_class_vauquelin",
+      "wikiname": "Vauquelin"
+    },
     {
       "intname": "fr_destroyer_le_fantasque_class_le_malin",
       "wikiname": "Le Malin"
@@ -3431,17 +3509,17 @@
     { "intname": "fr_cruiser_jeanne_darc", "wikiname": "Jeanne d'Arc" },
     { "intname": "fr_cruiser_emile_bertin", "wikiname": "Emile Bertin" },
     { "intname": "fr_destroyer_jaguar_class_panthere", "wikiname": "Panthere" },
+    { "intname": "fr_destroyer_aigle_class_aigle", "wikiname": "Aigle" },
     {
-      "intname": "fr_destroyer_aigle_class_aigle",
-      "wikiname": "Aigle",
-      "store": "12045"
+      "intname": "fr_destroyer_le_fantasque_class_le_triomphant",
+      "wikiname": "Le Triomphant"
     },
     {
       "intname": "fr_cruiser_dugauy_class_dugauy_trouin",
-      "wikiname": "Duguay-Trouin",
-      "store": "12046"
+      "wikiname": "Duguay-Trouin"
     },
-    { "intname": "fr_cruiser_suffren_class_dupleix", "wikiname": "Dupleix" }
+    { "intname": "fr_cruiser_suffren_class_dupleix", "wikiname": "Dupleix" },
+    { "intname": "fr_battleship_courbet_class_courbet", "wikiname": "Courbet" }
   ],
   "boats": [
     { "intname": "us_pt6", "wikiname": "PT-6" },
@@ -3473,7 +3551,6 @@
       "wikiname": "Thunderbolt (PT-556)"
     },
     { "intname": "us_ashville_class_douglas", "wikiname": "USS Douglas" },
-    { "intname": "us_frigate_tacoma_sub_event" },
     { "intname": "us_elco_80ft_pt109_boat", "wikiname": "PT-109" },
     { "intname": "us_higgins_78ft_pt658", "wikiname": "PT-658" },
     {
@@ -3638,6 +3715,7 @@
     { "intname": "jp_type_11_pt_15", "wikiname": "PT-15" },
     { "intname": "jp_escort_ikazuchi_class", "wikiname": "Ikazuchi" },
     { "intname": "jp_escort_hiburi_class_syonan", "wikiname": "Syonan" },
+    { "intname": "jp_yuri_class_asagao", "wikiname": "Asagao (YTE-01)" },
     { "intname": "jp_destroyer_chidori", "wikiname": "Chidori" },
     { "intname": "jp_type_t1_1941", "wikiname": "Type T-1" },
     { "intname": "jp_abtei_pr1", "wikiname": "Soukou-Tei" },
